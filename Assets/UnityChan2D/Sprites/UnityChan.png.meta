@@ -62,6 +62,66 @@ TextureImporter:
   - first:
       213: -6513711549821746433
     second: UnityChan_jump_down_1
+  - first:
+      213: 5712414315059725111
+    second: UnityChan_0
+  - first:
+      213: 5980890158178651738
+    second: UnityChan_1
+  - first:
+      213: 8023054339162103584
+    second: UnityChan_2
+  - first:
+      213: 7482928402111833721
+    second: UnityChan_3
+  - first:
+      213: 7044210759789102492
+    second: UnityChan_4
+  - first:
+      213: 2277041772830266462
+    second: UnityChan_5
+  - first:
+      213: -1206435530048771994
+    second: UnityChan_6
+  - first:
+      213: -3866970808056520181
+    second: UnityChan_7
+  - first:
+      213: -2499475194878362857
+    second: UnityChan_8
+  - first:
+      213: 9176509737776848771
+    second: UnityChan_9
+  - first:
+      213: 6210006033731599296
+    second: UnityChan_10
+  - first:
+      213: 6473684323340450062
+    second: UnityChan_11
+  - first:
+      213: 3595081623339846383
+    second: UnityChan_12
+  - first:
+      213: -7082203640110261086
+    second: UnityChan_13
+  - first:
+      213: -848919014055114981
+    second: UnityChan_14
+  - first:
+      213: 5261032952970624455
+    second: UnityChan_15
+  - first:
+      213: -5186178761352707991
+    second: UnityChan_16
+  - first:
+      213: -3460903724910110424
+    second: UnityChan_17
+  - first:
+      213: 8392872118997555232
+    second: UnityChan_18
+  - first:
+      213: 7187200083315046113
+    second: UnityChan_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,421 +194,421 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnityChan_footwork_0
+      name: UnityChan_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 64
-        height: 64
+        x: 17
+        y: 200
+        width: 24
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee235a2598caf5690800000000000000
-      internalID: -7611175139435793682
+      spriteID: 4f61ab385a43c724babd27ee5ea51969
+      internalID: 5712414315059725111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_footwork_1
+      name: UnityChan_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
-        width: 64
-        height: 64
+        x: 81
+        y: 200
+        width: 24
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd6fa882c4d8c7ed0800000000000000
-      internalID: -2414899941940201763
+      spriteID: 5188ee1e5db9d4a489f769f147315522
+      internalID: 5980890158178651738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_footwork_2
+      name: UnityChan_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 64
-        height: 64
+        x: 145
+        y: 200
+        width: 24
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5223a8317b615a300800000000000000
-      internalID: 262641128833692197
+      spriteID: 7fb2d21a4c346554d927c5423aeca704
+      internalID: 8023054339162103584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_damage1_0
+      name: UnityChan_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 64
-        height: 64
+        x: 202
+        y: 200
+        width: 32
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 64713974ab363fcc0800000000000000
-      internalID: -3678486818915674298
+      spriteID: 7ec7e2f733b52904a9a3f6938bba904e
+      internalID: 7482928402111833721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_damage2_0
+      name: UnityChan_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 64
-        height: 64
+        x: 270
+        y: 201
+        width: 30
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 42fe4345092e8ff00800000000000000
-      internalID: 1150918814309084964
+      spriteID: 4144d6a095752bf42b5905fed64433f1
+      internalID: 7044210759789102492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_0
+      name: UnityChan_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
+        x: 7
+        y: 141
+        width: 38
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0b79ba08c3930d140800000000000000
-      internalID: 4742353339640682416
+      spriteID: bb8038b1f8ef19e4fbe18b016fbbd5d0
+      internalID: 2277041772830266462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_1
+      name: UnityChan_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
+        x: 68
+        y: 137
+        width: 38
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 483b90bd394b821f0800000000000000
-      internalID: -1069406364372454524
+      spriteID: a5c4ca802bf0d504dbd5187e8620754f
+      internalID: -1206435530048771994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_2
+      name: UnityChan_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
+        x: 133
+        y: 137
+        width: 36
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07bf35d9da7eb53d0800000000000000
-      internalID: -3216722775971202192
+      spriteID: d8071893205562741b80664306ef8a22
+      internalID: -3866970808056520181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_3
+      name: UnityChan_8
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
-        width: 64
-        height: 64
+        x: 199
+        y: 139
+        width: 34
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e3eacce19cc70b040800000000000000
-      internalID: 4661362817575464510
+      spriteID: f9dee7ab9909e3c49957e0341f00fab7
+      internalID: -2499475194878362857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_4
+      name: UnityChan_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
+        x: 7
+        y: 77
+        width: 40
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4a429683299c14fb0800000000000000
-      internalID: -4665226109130300252
+      spriteID: 462d8b10dac41af4c97b1a1ed709b7fc
+      internalID: 9176509737776848771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_5
+      name: UnityChan_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 68
+        y: 73
+        width: 38
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7ae35d370e8a90fe0800000000000000
-      internalID: -1222260141884883289
+      spriteID: c7dc6348094c8454994b0f597aeb0a4d
+      internalID: 6210006033731599296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_6
+      name: UnityChan_11
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
+        x: 133
+        y: 73
+        width: 36
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bd126a5bcca6d8e20800000000000000
-      internalID: 3354454724914323931
+      spriteID: acf3381f5cf01394dbd6fdf6e1375c79
+      internalID: 6473684323340450062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_run_7
+      name: UnityChan_12
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
+        x: 199
+        y: 75
+        width: 36
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5ab1cdfacb7b1b920800000000000000
-      internalID: 3004384447465003941
+      spriteID: 03cc43588d178964b9a120c274aa7beb
+      internalID: 3595081623339846383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_jump_up_0
+      name: UnityChan_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 17
+        y: 5
+        width: 27
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ac154acf6ea411530800000000000000
-      internalID: 3823919914555822538
+      spriteID: 5003143ce9a8080489cab0115f0d9e7f
+      internalID: -7082203640110261086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_jump_up_1
+      name: UnityChan_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 81
+        y: 5
+        width: 27
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8dfbd23b51fd2c520800000000000000
-      internalID: 2720982409178628056
+      spriteID: 32eb096434c2e444f9277647104df071
+      internalID: -848919014055114981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_jump_top_0
+      name: UnityChan_15
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
+        x: 139
+        y: 7
+        width: 34
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 00c4d4047bb9b0610800000000000000
-      internalID: 1588534504938359808
+      spriteID: 6525a17cc1be78b4db8aabc8c9523e93
+      internalID: 5261032952970624455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_jump_top_1
+      name: UnityChan_16
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
+        x: 202
+        y: 10
+        width: 34
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 485f117ab5bbd53e0800000000000000
-      internalID: -2063287051946429052
+      spriteID: 1e4333f2f73fa1240ad99bb56abdcb2d
+      internalID: -5186178761352707991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_jump_top_2
+      name: UnityChan_17
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
+        x: 265
+        y: 8
+        width: 35
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 05ad9c59d11a0a060800000000000000
-      internalID: 6962742172353944144
+      spriteID: c310d1be59ce36d4ca3e727373fddd6f
+      internalID: -3460903724910110424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_jump_down_0
+      name: UnityChan_18
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
+        x: 329
+        y: 5
+        width: 35
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 05313e92720537470800000000000000
-      internalID: 8391138659858060112
+      spriteID: 49c61f3e1ddd4fc4bbf57abd9b926a6f
+      internalID: 8392872118997555232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UnityChan_jump_down_1
+      name: UnityChan_19
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
+        x: 393
+        y: 5
+        width: 35
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ff204874bd5aa95a0800000000000000
-      internalID: -6513711549821746433
+      spriteID: cef246c9467e94f4ba9a951c52ab6a93
+      internalID: 7187200083315046113
       vertices: []
       indices: 
       edges: []
@@ -556,7 +616,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9aac1767c2fd16b4fb5726557d8c70f1
     internalID: 0
     vertices: []
     indices: 
