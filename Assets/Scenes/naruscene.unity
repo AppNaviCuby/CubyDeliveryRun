@@ -8888,7 +8888,6 @@ GameObject:
   - component: {fileID: 2049910212}
   - component: {fileID: 2049910211}
   - component: {fileID: 2049910210}
-  - component: {fileID: 2049910213}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8961,27 +8960,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2049910213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049910209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3c1ecc9ba42a4dbaa36d2f89cf8ce17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 2103628056}
-  stopPosition: {fileID: 0}
-  nextLevel: NobuScene
---- !u!4 &2103628056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4948043637332697942}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4948043637332697942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9002,7 +8980,7 @@ PrefabInstance:
     - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
         type: 3}
@@ -9048,6 +9026,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015601767899663882, guid: 05724d88de045cd4c94229179847c8b0,
+        type: 3}
+      propertyPath: characterHeightOffset
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05724d88de045cd4c94229179847c8b0, type: 3}

@@ -8,7 +8,9 @@ public class MoveCharacterAction : MonoBehaviour
 	static int hashFallSpeed = Animator.StringToHash ("FallSpeed");
 	static int hashGroundDistance = Animator.StringToHash ("GroundDistance");
 	static int hashIsCrouch = Animator.StringToHash ("IsCrouch");
-
+    
+	static int Max_jumpCount=2;
+	static int jumpCount=0;
 	static int hashDamage = Animator.StringToHash ("Damage");
 
 	[SerializeField] private float characterHeightOffset = 0.4f;
@@ -33,8 +35,9 @@ public class MoveCharacterAction : MonoBehaviour
 		bool isDown = Input.GetAxisRaw ("Vertical") < 0;
 
         Vector2 velocity = rig2d.velocity;
-		if (Input.GetButtonDown ("Jump")) {
+		if (jumpCount< Max_jumpCount&&Input.GetButtonDown ("Jump")) {
 			velocity.y = 5;
+			jumpCount++;
 		}
 		if (axis != 0){
 			spriteRenderer.flipX = axis < 0;
@@ -59,4 +62,11 @@ public class MoveCharacterAction : MonoBehaviour
     {
         animator.SetTrigger(hashDamage);  
     }
+	private void OnCollisionEnter2D( Collision2D collision )
+	{
+		if (collision.gameObject.name == "Tilemap")
+		{
+			jumpCount = 0;
+		}
+	}
 }
