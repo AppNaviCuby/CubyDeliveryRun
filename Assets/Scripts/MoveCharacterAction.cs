@@ -9,7 +9,8 @@ public class MoveCharacterAction : MonoBehaviour
 	static int hashGroundDistance = Animator.StringToHash ("GroundDistance");
 	static int hashIsCrouch = Animator.StringToHash ("IsCrouch");
     
-	static int Max_jumpCount=2;
+	public int jumpHight;
+	[SerializeField] int Max_jumpCount;
 	static int jumpCount=0;
 	static int hashDamage = Animator.StringToHash ("Damage");
 
@@ -34,9 +35,15 @@ public class MoveCharacterAction : MonoBehaviour
 		float axis = Input.GetAxis ("Horizontal");
 		bool isDown = Input.GetAxisRaw ("Vertical") < 0;
 
+		/*
+		jumphightは
+		1マス：5
+		2マス：7
+		3マス：8
+		*/
         Vector2 velocity = rig2d.velocity;
 		if (jumpCount< Max_jumpCount&&Input.GetButtonDown ("Jump")) {
-			velocity.y = 5;
+			velocity.y = jumpHight;
 			jumpCount++;
 		}
 		if (axis != 0){

@@ -7,14 +7,17 @@ public class TargetManager : MonoBehaviour
 {
     public List<GameObject> targetList = new List<GameObject>();
     public List<Sprite> targetSpriteList = new List<Sprite>();
-    public int longth, falseNumber;
-    public Text falseText;
+    public int longth, weight;
+    public Text weightText;
+    MoveCharacterAction moveCharacterAction;
 
     // Start is called before the first frame update
     void Start()
     {
-        falseNumber = 0;
-        falseText.text = "失敗数　：" +falseNumber+ "回";
+        moveCharacterAction = GameObject.FindGameObjectWithTag("Character").GetComponent<MoveCharacterAction>();
+
+        weight = 1;
+        weightText.text = "重さ　：" +weight;
         longth = targetList.Count;
         for(int i=0;i < longth;i++)
         {
@@ -31,15 +34,8 @@ public class TargetManager : MonoBehaviour
 
     public void targetJudge(Sprite thisFood)
     {
-        for(int i = 0; i < longth + 1; i++)
+        for(int i = 0; i < longth; i++)
         {
-            //判定が正の時、それに応じたアイコンを光らせる
-            //Debug.Log(i+1+ "回目");
-            if(i == longth)
-            {
-                falseNumber++;
-                break;
-            }
             if(thisFood == targetSpriteList[i])
             {
                 //Debug.Log("good");
@@ -48,7 +44,37 @@ public class TargetManager : MonoBehaviour
             }
         }
 
-        Debug.Log(falseNumber+ "回間違えた");
-        falseText.text = "失敗数　：" +falseNumber+ "回";
+        //Debug.Log(falseNumber+ "回間違えた");
+        weightText.text = "重さ　：" +weight;
+    }
+    public int gravityAdd()
+    {
+        weight++;
+        for(int i = 1; i< weight + 1; i++)
+        {
+            if(weight ==1)
+            {
+                moveCharacterAction.jumpHight = 8;
+                break;
+            }
+            if(weight ==2)
+            {
+                moveCharacterAction.jumpHight = 7;
+                break;
+            }
+            if(weight ==3)
+            {
+                moveCharacterAction.jumpHight = 5;
+                break;
+            }
+            if(weight ==4)
+            {
+                moveCharacterAction.jumpHight = 4;
+                break;
+            }
+            
+        }
+
+        return moveCharacterAction.jumpHight;
     }
 }

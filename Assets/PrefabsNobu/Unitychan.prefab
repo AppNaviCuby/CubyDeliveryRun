@@ -18,6 +18,16 @@ PrefabInstance:
       propertyPath: characterHeightOffset
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 4614213691818669269, guid: ddad8f26de4834609b87480df9c86d80,
+        type: 3}
+      propertyPath: Max_jumpCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614213691818669269, guid: ddad8f26de4834609b87480df9c86d80,
+        type: 3}
+      propertyPath: jumpHight
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4614213691818669270, guid: ddad8f26de4834609b87480df9c86d80,
         type: 3}
       propertyPath: m_LocalPosition.x
