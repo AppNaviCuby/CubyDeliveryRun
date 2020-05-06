@@ -62,11 +62,30 @@ public class MoveCharacterAction : MonoBehaviour
     {
         animator.SetTrigger(hashDamage);  
     }
-	private void OnCollisionEnter2D( Collision2D collision )
-	{
-		if (collision.gameObject.name == "Tilemap")
-		{
-			jumpCount = 0;
-		}
-	}
+	// private void OnCollisionEnter2D( Collision2D collision )
+	// {
+	// 	if (collision.gameObject.name == "Tilemap")
+	// 	{
+	// 		jumpCount = 0;
+	// 	}
+	// }
+	void OnCollisionEnter2D(Collision2D other)
+    {
+        //自分があるオブジェクトと接触しているポイントを一つづつ調べる
+        foreach (var contact in other.contacts) 
+        {
+            //自分から接触ポイントへのベクトル
+            Vector2 dir = contact.point - (Vector2)transform.position;
+
+            //接触しているゲームオブジェクトの下向きのベクトル
+            Vector2 contactObjectDown = -contact.collider.gameObject.transform.up;
+
+            //接触しているオブジェクトの下向きのベクトルと自身から接触しているポイントへのベクトルの
+            //角度が１０度未満であった場合にジャンプの段階数のリセットする
+            if (Vector2.Angle (contactObjectDown, dir) < 10.0f)
+                jumpCount = 0;
+
+            break;
+        }
+    }
 }
