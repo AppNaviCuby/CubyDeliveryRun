@@ -11,7 +11,7 @@ public class SpriteAction : MonoBehaviour
 	static int hashDamage = Animator.StringToHash ("Damage");
 	static int hashIsDead = Animator.StringToHash ("IsDead");
 
-	[SerializeField] private float characterHeightOffset = 0.2f;
+	[SerializeField] private float characterHeightOffset = 0.4f;
 	[SerializeField] LayerMask groundMask;
 
 	[SerializeField, HideInInspector] Animator animator;
@@ -37,6 +37,7 @@ public class SpriteAction : MonoBehaviour
 		}
 
 		var distanceFromGround = Physics2D.Raycast (transform.position, Vector3.down, 1, groundMask);
+		//Debug.Log(distanceFromGround.distance);
 
 		// update animator parameters
 		animator.SetBool (hashIsCrouch, isDown);
