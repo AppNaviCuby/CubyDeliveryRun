@@ -11,15 +11,23 @@ public class EnemyThornController : MonoBehaviour
     {
          //Rigidbody2Dを取得
         rb = GetComponent<Rigidbody2D>();
+       rb.isKinematic = true;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnTriggerEnter(Collider other){
 
     }
+
+
+    public void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.tag == "Character"){
+        rb.isKinematic = false;
+       Debug.Log("on");
+        }
+    }
+
+    
 }
