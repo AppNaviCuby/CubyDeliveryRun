@@ -18,7 +18,6 @@ public class TargetManager : MonoBehaviour
         moveCharacterAction = GameObject.FindGameObjectWithTag("Character").GetComponent<MoveCharacterAction>();
 
         weight = 1;
-        weightText.text = "重さ　：" +weight;
         longth = targetList.Count;
         for(int i=0;i < longth;i++)
         {
@@ -31,7 +30,7 @@ public class TargetManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        weightText.text = "重さ　：" +weight;
     }
 
     public void targetJudge(Sprite thisFood)
@@ -55,7 +54,6 @@ public class TargetManager : MonoBehaviour
         }
 
         //Debug.Log(falseNumber+ "回間違えた");
-        weightText.text = "重さ　：" +weight;
     }
     public int gravityAdd()
     {
