@@ -212,8 +212,11 @@ MonoBehaviour:
   - {fileID: 2055408526}
   - {fileID: 436999016}
   targetSpriteList: []
+  goalList:
+  - {fileID: 816473359}
   longth: 0
   weight: 0
+  gotTarget: 0
   weightText: {fileID: 1031834194}
 --- !u!1 &85258667
 GameObject:
@@ -771,12 +774,12 @@ PrefabInstance:
     - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.57
+      value: -3.94
       objectReference: {fileID: 0}
     - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.66
+      value: 2.15
       objectReference: {fileID: 0}
     - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
         type: 3}
@@ -806,7 +809,7 @@ PrefabInstance:
     - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5015601767899663881, guid: 05724d88de045cd4c94229179847c8b0,
         type: 3}
@@ -1308,7 +1311,6 @@ GameObject:
   - component: {fileID: 816473362}
   - component: {fileID: 816473361}
   - component: {fileID: 816473360}
-  - component: {fileID: 816473364}
   m_Layer: 0
   m_Name: Forest_terrain_dirt_grass(summer)_128px_4
   m_TagString: Untagged
@@ -1350,7 +1352,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816473359}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1424,20 +1426,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &816473364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816473359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7acd769522d24532b7c012f88501db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &851668516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,7 +1985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1918995989
 Transform:
   m_ObjectHideFlags: 0
