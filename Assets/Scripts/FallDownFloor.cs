@@ -6,10 +6,8 @@ public class FallDownFloor : MonoBehaviour
 {
     //　床が落下するまでの時間
 	[SerializeField]private float timeToFall = 1.0f;
-     [Header("振動幅")] public float vibrationWidth = 0.05f;
-     [Header("振動速度")] public float vibrationSpeed = 30.0f;
 
-       private bool downFloorFlag = false;
+
      
 
       Rigidbody2D rb;
@@ -35,7 +33,7 @@ public class FallDownFloor : MonoBehaviour
      public void OnCollisionEnter2D(Collision2D other){
         if (other.gameObject.tag == "Character"){
              StartCoroutine("FloorDownCount");
-             downFloorFlag = true;
+            Debug.Log("in");
             
         }
      }
@@ -43,7 +41,7 @@ public class FallDownFloor : MonoBehaviour
     public void OnCollisionExit2D(Collision2D other){
         if (other.gameObject.tag == "Character"){
          StopCoroutine("FloorDownCount");
-          downFloorFlag = false;
+          
          Debug.Log("out");
         }
     }
