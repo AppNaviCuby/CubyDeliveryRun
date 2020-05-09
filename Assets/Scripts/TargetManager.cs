@@ -7,7 +7,8 @@ public class TargetManager : MonoBehaviour
 {
     public List<GameObject> targetList = new List<GameObject>();
     public List<Sprite> targetSpriteList = new List<Sprite>();
-    public int longth, weight;
+    public List<GameObject> goalList = new List<GameObject>();
+    public int longth, weight, gotTarget = 0;
     public Text weightText;
     MoveCharacterAction moveCharacterAction;
 
@@ -23,6 +24,7 @@ public class TargetManager : MonoBehaviour
         {
             targetSpriteList.Add(targetList[i].GetComponent<Image>().sprite);
         }
+        //Debug.Log(targetSpriteList.Count);
 
     }
 
@@ -38,9 +40,17 @@ public class TargetManager : MonoBehaviour
         {
             if(thisFood == targetSpriteList[i])
             {
-                //Debug.Log("good");
                 targetList[i].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-                break;
+                gotTarget++;
+            }
+
+            //すべてのtargetを集めたらゴールが開く
+            if(gotTarget == longth)
+            {
+                for(int j = 0; j < goalList.Count; j++)
+                {
+                    Destroy(goalList[j]);
+                }
             }
         }
 
