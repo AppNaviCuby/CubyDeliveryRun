@@ -25,7 +25,7 @@ public class FoodManager : MonoBehaviour
         //衝突判定
         if (thisCollision.gameObject.tag == "Character" )
         {   
-            targetManager.gravityAdd();
+            targetManager.gravityAdd(targetManager.weight + 1);
             //当たった時にtargetListと比較し正誤判定
             //Debug.Log("判定開始");
             targetManager.targetJudge(thisFood);

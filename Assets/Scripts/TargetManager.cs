@@ -7,7 +7,8 @@ public class TargetManager : MonoBehaviour
 {
     public List<GameObject> targetList = new List<GameObject>();
     public List<Sprite> targetSpriteList = new List<Sprite>();
-    public int longth, weight;
+    public List<GameObject> goalList = new List<GameObject>();
+    public int longth, weight, gotTarget = 0;
     public Text weightText;
     MoveCharacterAction moveCharacterAction;
 
@@ -17,19 +18,19 @@ public class TargetManager : MonoBehaviour
         moveCharacterAction = GameObject.FindGameObjectWithTag("Character").GetComponent<MoveCharacterAction>();
 
         weight = 1;
-        weightText.text = "重さ　：" +weight;
         longth = targetList.Count;
         for(int i=0;i < longth;i++)
         {
             targetSpriteList.Add(targetList[i].GetComponent<Image>().sprite);
         }
+        //Debug.Log(targetSpriteList.Count);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        weightText.text = "重さ　：" +weight;
     }
 
     public void targetJudge(Sprite thisFood)
@@ -38,18 +39,25 @@ public class TargetManager : MonoBehaviour
         {
             if(thisFood == targetSpriteList[i])
             {
-                //Debug.Log("good");
                 targetList[i].GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-                break;
+                gotTarget++;
+            }
+
+            //すべてのtargetを集めたらゴールが開く
+            if(gotTarget == longth)
+            {
+                for(int j = 0; j < goalList.Count; j++)
+                {
+                    Destroy(goalList[j]);
+                }
             }
         }
 
         //Debug.Log(falseNumber+ "回間違えた");
-        weightText.text = "重さ　：" +weight;
     }
-    public int gravityAdd()
+    public int gravityAdd(int nowWeight)
     {
-        weight++;
+        weight = nowWeight;
         for(int i = 1; i< weight + 1; i++)
         {
             if(weight ==1)
