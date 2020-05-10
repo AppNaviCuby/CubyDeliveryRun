@@ -8,6 +8,7 @@ public class FallDownFloor : MonoBehaviour
 	[SerializeField]private float timeToFall = 1.0f;
     [SerializeField]private float overWeight = 1;
 
+
     GameObject TargetManager;
     public GameObject OmoriController;
 
