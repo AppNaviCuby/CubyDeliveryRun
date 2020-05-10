@@ -55,9 +55,9 @@ public class TargetManager : MonoBehaviour
 
         //Debug.Log(falseNumber+ "回間違えた");
     }
-    public int gravityAdd()
+    public int gravityAdd(int nowWeight)
     {
-        weight++;
+        weight = nowWeight;
         for(int i = 1; i< weight + 1; i++)
         {
             if(weight ==1)

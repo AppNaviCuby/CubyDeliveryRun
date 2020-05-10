@@ -7,7 +7,7 @@ public class OmoriController : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     [SerializeField] float direction;
     Rigidbody2D omoriRb;
-    public int omoriMass = 1;
+    //public int omoriMass = 1;
 
     // Start is called before the first frame update
     void Start()

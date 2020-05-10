@@ -21,7 +21,7 @@ public class ItemController : MonoBehaviour
     {
         if(thisCollision.gameObject.tag == "Character")
         {
-            targetManager.weight = 1;
+            targetManager.gravityAdd(1);
             Destroy(this.gameObject);
         }
     }
