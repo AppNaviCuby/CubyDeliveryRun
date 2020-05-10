@@ -25,13 +25,13 @@ public class OmoriController : MonoBehaviour
         Debug.DrawRay(hajiLeft, Vector2.down * 0.51f, Color.yellow);
         if(Physics2D.Raycast (hajiLeft, Vector2.down, 0.52f, groundMask) && Physics2D.Raycast (hajiRight, Vector2.down, 0.52f, groundMask))
         {
-            Debug.Log("地上");
+            //Debug.Log("地上");
             Vector2 groundVelocity = omoriRb.velocity;
             groundVelocity.y = 0f;
             omoriRb.velocity = groundVelocity;
         }else if(!Physics2D.Raycast (hajiLeft, Vector2.down, 0.52f, groundMask) && !Physics2D.Raycast (hajiRight, Vector2.down, 0.52f, groundMask))
         {
-            Debug.Log("地上じゃない");
+            //Debug.Log("地上じゃない");
             omoriRb.velocity = Vector2.down * 2;
         }
     }
