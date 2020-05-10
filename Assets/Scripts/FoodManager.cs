@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class FoodManager : MonoBehaviour
 {
+    AudioSource audioSource;
+    public List<AudioClip> audioClip = new List<AudioClip>();
     TargetManager targetManager;
 
     // Start is called before the first frame updat
     void Start()
     {
         targetManager = GameObject.Find("TargetManager").GetComponent<TargetManager>();
+
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,6 +35,8 @@ public class FoodManager : MonoBehaviour
             targetManager.targetJudge(thisFood);
             //Debug.Log("判定終了");
 
+            //sound1鳴らす
+            audioSource.PlayOneShot(audioClip[0]);
             //判定後重さ+1して自分を消す
             Destroy(this.gameObject);
         }
