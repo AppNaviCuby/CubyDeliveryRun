@@ -480,13 +480,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ba7cef4a85573f941bf409ea44f1a1ee, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.434
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 108
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2350,6 +2350,16 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.35092092
       objectReference: {fileID: 0}
+    - target: {fileID: 6349260954471786865, guid: 4ed8fe878b7904bc0bece478f04e4626,
+        type: 3}
+      propertyPath: audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6349260954471786865, guid: 4ed8fe878b7904bc0bece478f04e4626,
+        type: 3}
+      propertyPath: audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 30b4d9e4748e2224086bb2996fdda5d4, type: 3}
     - target: {fileID: 6349260954471786868, guid: 4ed8fe878b7904bc0bece478f04e4626,
         type: 3}
       propertyPath: m_Name
@@ -2537,6 +2547,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 8a2eb82325f74482cbfd2e8a91d9f90f,
         type: 3}
+    - target: {fileID: 5671598214407010693, guid: fc1821fb5e3f6409ca7bb83cf7f9aeee,
+        type: 3}
+      propertyPath: audioClip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671598214407010693, guid: fc1821fb5e3f6409ca7bb83cf7f9aeee,
+        type: 3}
+      propertyPath: audioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 30b4d9e4748e2224086bb2996fdda5d4, type: 3}
     - target: {fileID: 5671598214407010694, guid: fc1821fb5e3f6409ca7bb83cf7f9aeee,
         type: 3}
       propertyPath: m_Name
