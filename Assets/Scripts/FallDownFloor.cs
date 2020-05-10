@@ -9,10 +9,10 @@ public class FallDownFloor : MonoBehaviour
     [SerializeField]private float overWeight = 1;
 
     GameObject TargetManager;
-    GameObject OmoriController;
+    public GameObject OmoriController;
 
     TargetManager Targetscript;
-    OmoriController Omoriscript;
+    OmoriInfor Omoriscript;
     int unitychanWeight = 0;
     int omoriWeight = 0;
 
@@ -23,8 +23,8 @@ public class FallDownFloor : MonoBehaviour
     {
         TargetManager = GameObject.Find("TargetManager");
         Targetscript = TargetManager.GetComponent<TargetManager>();
-        OmoriController = GameObject.Find("OmoriController");
-        Omoriscript = OmoriController.GetComponent<OmoriController>();
+        //OmoriController = GameObject.Find("OmoriController");
+        Omoriscript = OmoriController.GetComponent<OmoriInfor>();
          //Rigidbody2Dを取得
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
