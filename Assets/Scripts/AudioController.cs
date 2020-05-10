@@ -1,0 +1,30 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioController : MonoBehaviour
+{
+    AudioSource audioSource;
+    public List<AudioClip> soundList = new List<AudioClip>();
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+   public void FoodGet()
+    {
+        audioSource.PlayOneShot(soundList[0]);
+    }
+   public void ItemGet()
+    {
+        audioSource.PlayOneShot(soundList[1]);
+    }
+}
