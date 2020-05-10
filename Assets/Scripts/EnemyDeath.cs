@@ -22,16 +22,18 @@ public class EnemyDeath : MonoBehaviour
 
       public void OnTriggerEnter2D(Collider2D other){
            if (other.gameObject.tag == "Character"){
-       
        Debug.Log("death");
+       
         StartCoroutine("DeathRetry");
+         Time.timeScale = 0.0f;
            }
     }
 
     IEnumerator DeathRetry(){
             //3秒停止
 
-             Time.timeScale = 0.0f;
+            
+             for (int i = 0; i < 30; i++) { yield return null; }
            SceneManager.LoadScene (SceneManager.GetActiveScene().name);
            yield break;
     }
