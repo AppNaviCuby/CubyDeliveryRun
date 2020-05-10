@@ -9,9 +9,12 @@ public class FallDownFloor : MonoBehaviour
     [SerializeField]private float overWeight = 1;
 
     GameObject TargetManager;
-    TargetManager script;
+    GameObject OmoriController;
+
+    TargetManager Targetscript;
+    OmoriController Omoriscript;
     int unitychanWeight = 0;
-     
+    int omoriWeight = 0;
 
       Rigidbody2D rb;
       Collider2D col;
@@ -19,7 +22,9 @@ public class FallDownFloor : MonoBehaviour
     void Start()
     {
         TargetManager = GameObject.Find("TargetManager");
-        script = TargetManager.GetComponent<TargetManager>();
+        Targetscript = TargetManager.GetComponent<TargetManager>();
+        OmoriController = GameObject.Find("OmoriController");
+        Omoriscript = OmoriController.GetComponent<OmoriController>();
          //Rigidbody2Dを取得
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
@@ -30,7 +35,8 @@ public class FallDownFloor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        unitychanWeight = script.weight;
+        unitychanWeight = Targetscript.weight;
+        omoriWeight = Omoriscript.omoriMass;
     }
 
    
@@ -40,7 +46,7 @@ public class FallDownFloor : MonoBehaviour
          Debug.Log(overWeight);
          
 
-        if (other.gameObject.tag == "Character" && (unitychanWeight >= overWeight)){
+        if ((other.gameObject.tag == "Character" && (unitychanWeight >= overWeight) )|| (omoriWeight >= overWeight)){
              StartCoroutine("FloorDownCount");
             Debug.Log("in");
             
