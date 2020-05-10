@@ -54,6 +54,7 @@ public class MoveCharacterAction : MonoBehaviour
 
 
 		var distanceFromGround = Physics2D.Raycast (transform.position, Vector3.down, 1, groundMask);
+		//Debug.DrawRay(transform.position, Vector2.down * 1f, Color.yellow);
 		//Debug.Log(distanceFromGround.distance);
 
 		// update animator parameters
