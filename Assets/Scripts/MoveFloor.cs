@@ -10,6 +10,9 @@ public class MoveFloor : MonoBehaviour
     Vector2 DefaultPos;
     Vector2 PrevPos;
 
+    [SerializeField] float MovedistanceX;
+    [SerializeField] float MovedistanceY;
+
     
 
     void Start()
@@ -22,9 +25,10 @@ public class MoveFloor : MonoBehaviour
     void FixedUpdate()
     {
         PrevPos = rb.position;
-
+        
+        if(MovedistanceX>0){
         // X座標のみ横移動　Mathf.PingPongの数値部分変更で移動距離が変わる
-        Vector2 pos = new Vector2(DefaultPos.x + Mathf.PingPong(Time.time,3), DefaultPos.y);
+        Vector2 pos = new Vector2(DefaultPos.x + Mathf.PingPong(Time.time,MovedistanceX), DefaultPos.y);
         rb.MovePosition(pos);
 
         // 速度を逆算する
@@ -32,5 +36,16 @@ public class MoveFloor : MonoBehaviour
 
         // 速度のX成分を SurfaceEffector2D に適用
         surfaceEffector.speed = velocity.x;
+        }else{
+            Vector2 pos = new Vector2(DefaultPos.x , DefaultPos.y+ + Mathf.PingPong(Time.time,MovedistanceY));
+        rb.MovePosition(pos);
+
+        // 速度を逆算する
+        Vector2 velocity = (pos - PrevPos) / Time.deltaTime * 50;
+
+        // 速度のX成分を SurfaceEffector2D に適用
+        surfaceEffector.speed = velocity.y;
+
+        }
     }
 }
