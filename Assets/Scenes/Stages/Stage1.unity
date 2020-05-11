@@ -3053,6 +3053,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forest_terrain_dirt_grass(summer)_128px_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4057720786339321899, guid: fefb29026f7f946e6a6e9fe1fdb3e1a6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5424578844474104825, guid: fefb29026f7f946e6a6e9fe1fdb3e1a6,
         type: 3}
       propertyPath: m_LocalPosition.x

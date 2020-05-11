@@ -9,13 +9,15 @@ public class FallDownFloor : MonoBehaviour
     [SerializeField]private float overWeight = 1;
 
 
+    Dictionary<GameObject,int> ObjectWeightList = new Dictionary<GameObject,int>();
     GameObject TargetManager;
-    public GameObject OmoriController;
+   // public GameObject OmoriController;
 
     TargetManager Targetscript;
-    OmoriInfor Omoriscript;
+    //OmoriInfor Omoriscript;
     int unitychanWeight = 0;
-    int omoriWeight = 0;
+    //int omoriWeight = 0;
+    int totalWeight = 0;
 
       Rigidbody2D rb;
       Collider2D col;
@@ -25,7 +27,7 @@ public class FallDownFloor : MonoBehaviour
         TargetManager = GameObject.Find("TargetManager");
         Targetscript = TargetManager.GetComponent<TargetManager>();
         //OmoriController = GameObject.Find("OmoriController");
-        Omoriscript = OmoriController.GetComponent<OmoriInfor>();
+        //Omoriscript = OmoriController.GetComponent<OmoriInfor>();
          //Rigidbody2Dを取得
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
@@ -37,32 +39,48 @@ public class FallDownFloor : MonoBehaviour
     void Update()
     {
         unitychanWeight = Targetscript.weight;
-        omoriWeight = Omoriscript.omoriMass;
+        //omoriWeight = Omoriscript.omoriMass;
+
     }
 
    
 
      public void OnCollisionEnter2D(Collision2D other){
-         Debug.Log(unitychanWeight);
-         Debug.Log(overWeight);
-         
+         if(other.gameObject.tag == "Character"){
+             ObjectWeightList.Add(other.gameObject,unitychanWeight);
+              
+         }
+         if(other.gameObject.tag == "Obstacle"){
+              int omoriWeight = other.gameObject.GetComponent<OmoriInfor>().omoriMass;
+             ObjectWeightList.Add(other.gameObject,omoriWeight);
+         }
 
-        if ((other.gameObject.tag == "Character" && (unitychanWeight >= overWeight) )|| (omoriWeight >= overWeight)){
+        TotalWeightCalc();
+
+
+        if(totalWeight >= overWeight){
+            StartCoroutine("FloorDownCount");
+        }
+      
+
+       /* if ((other.gameObject.tag == "Character" && (unitychanWeight >= overWeight) )|| (omoriWeight >= overWeight)){
              StartCoroutine("FloorDownCount");
             Debug.Log("in");
             
-        }
+        }*/
      }
 
     public void OnCollisionExit2D(Collision2D other){
-        if (other.gameObject.tag == "Character"){
+        ObjectWeightList.Remove(other.gameObject);
+        TotalWeightCalc();
+        if (totalWeight < overWeight){
          StopCoroutine("FloorDownCount");
           
          Debug.Log("out");
         }
     }
 
-      IEnumerator FloorDownCount()
+    IEnumerator FloorDownCount()
     {//指定秒経過後に落ちる
         yield return new WaitForSeconds(timeToFall);
          rb.isKinematic = false;
@@ -71,6 +89,14 @@ public class FallDownFloor : MonoBehaviour
 
      void OnBecameInvisible (){
         GameObject.Destroy(this.gameObject);
+    }
+
+    void TotalWeightCalc(){
+         int ObjectWeight = 0;
+        foreach(int Value in ObjectWeightList.Values){
+            ObjectWeight += Value;
+        }
+        totalWeight = ObjectWeight;
     }
 
 }
