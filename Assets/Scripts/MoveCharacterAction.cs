@@ -11,6 +11,8 @@ public class MoveCharacterAction : MonoBehaviour
     
 	public int jumpHight;
 	[SerializeField] int Max_jumpCount;
+
+	[SerializeField] float speedX=1.5f;
 	static int jumpCount=0;
 	static int hashDamage = Animator.StringToHash ("Damage");
 
@@ -48,7 +50,8 @@ public class MoveCharacterAction : MonoBehaviour
 		}
 		if (axis != 0){
 			spriteRenderer.flipX = axis < 0;
-            velocity.x = axis * 2;
+            velocity.x = speedX*axis * 2;  //speedX倍unitychanが速くなる
+			
         }
         rig2d.velocity = velocity;
 
