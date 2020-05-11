@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TargetManager : MonoBehaviour
 {
     public List<GameObject> targetList = new List<GameObject>();
-    public List<Sprite> targetSpriteList = new List<Sprite>();
+    [HideInInspector]public List<Sprite> targetSpriteList = new List<Sprite>();
     public List<GameObject> goalList = new List<GameObject>();
     public int longth, weight, gotTarget = 0;
     public Text weightText;
