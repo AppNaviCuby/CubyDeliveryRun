@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OmoriInfor : MonoBehaviour
 {
-    public int omoriMass;
+    public int OmoriMass;
     // Start is called before the first frame update
     void Start()
     {

@@ -51,8 +51,8 @@ public class FallDownFloor : MonoBehaviour
               
          }
          if(other.gameObject.tag == "Obstacle"){
-              int omoriWeight = other.gameObject.GetComponent<OmoriInfor>().omoriMass;
-             ObjectWeightList.Add(other.gameObject,omoriWeight);
+              int OmoriWeight = other.gameObject.GetComponent<OmoriInfor>().OmoriMass;
+             ObjectWeightList.Add(other.gameObject,OmoriWeight);
          }
 
         TotalWeightCalc();

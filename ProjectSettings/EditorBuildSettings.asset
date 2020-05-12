@@ -17,10 +17,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/UnityChan2D/Demo/Scenes/World 1-1.unity
     guid: bc1bc11bd56944cb68646a65a5fff077
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NobuScene.unity
     guid: 93a400704438cc94495aa79c7948f532
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 3d63245fbdf3c5943a76d961769ccb9e
+  - enabled: 1
+    path: Assets/Scenes/GameSample.unity
+    guid: 8294d970f16024afda0b8b60a1f21b6d
+
     path: Assets/Scenes/Moving floor.unity
     guid: 98c81112bbb4e174dae6eadfbd14fa75
   m_configObjects: {}
