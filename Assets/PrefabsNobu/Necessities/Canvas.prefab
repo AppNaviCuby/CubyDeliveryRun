@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 833794711946618562}
   - component: {fileID: 833794711946618565}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WeightText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 833794711980103890}
   - component: {fileID: 833794711980103893}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: TargetPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 6852059263582739250}
   - component: {fileID: 3220834063864986153}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: ClearPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
