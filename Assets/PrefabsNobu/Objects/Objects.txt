@@ -29,3 +29,8 @@
 押せる障害物
 押したら1マスずつ横に動く
 正確に座標変更できる方法募集中
+
+・MovingFloor
+動く床。XYがある
+内部のObjectにそれぞれMoveFloorScriptがあり、その中のMovedistanceを変更
+すべて同じ数字にすることに注意
