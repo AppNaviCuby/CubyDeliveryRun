@@ -1993,7 +1993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToFall: 1
-  overWeight: 1
+  overWeight: 2
 --- !u!50 &2045440753
 Rigidbody2D:
   serializedVersion: 4
