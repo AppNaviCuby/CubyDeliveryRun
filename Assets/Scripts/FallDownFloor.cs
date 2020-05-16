@@ -45,12 +45,13 @@ public class FallDownFloor : MonoBehaviour
 
    
 
-     public void OnCollisionEnter2D(Collision2D other){
+     public void OnTriggerEnter2D(Collider2D other){
          if(other.gameObject.tag == "Character"){
              ObjectWeightList.Add(other.gameObject,unitychanWeight);
               
          }
          if(other.gameObject.tag == "Obstacle"){
+             //Debug.Log("お守りに触れた");
               int OmoriWeight = other.gameObject.GetComponent<OmoriInfor>().OmoriMass;
              ObjectWeightList.Add(other.gameObject,OmoriWeight);
          }
