@@ -54,7 +54,7 @@ public class OmoriInfor : MonoBehaviour
         if (OmoriOnFloorFlag)
         {
             DownFloorOmori.GetOmoriMassUpdate(this.gameObject, OmoriMass);
-            Debug.Log(this.gameObject);
+            //Debug.Log(this.gameObject);
         }
     }
 

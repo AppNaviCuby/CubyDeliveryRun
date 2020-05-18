@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToFall: 1
-  overWeight: 2
+  overWeight: 3
 --- !u!61 &4142087183025068782
 BoxCollider2D:
   m_ObjectHideFlags: 0
