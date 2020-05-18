@@ -51,12 +51,12 @@ public class FallDownFloor : MonoBehaviour
         if (other.gameObject.tag == "Character")
         {
             ObjectWeightList.Add(other.gameObject, unitychanWeight);
-            Debug.Log("chara in");
+            //Debug.Log("chara in");
         }
         if (other.gameObject.tag == "Obstacle")
         {
 
-            Debug.Log("お守りに触れた");
+            //Debug.Log("お守りに触れた");
             int OmoriWeight = other.gameObject.GetComponent<OmoriInfor>().OmoriMass;
             ObjectWeightList.Add(other.gameObject, OmoriWeight);
         }
