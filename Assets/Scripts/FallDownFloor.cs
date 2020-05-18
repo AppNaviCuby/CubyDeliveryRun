@@ -50,7 +50,7 @@ public class FallDownFloor : MonoBehaviour
         if (other.gameObject.tag == "Character")
         {
             ObjectWeightList.Add(other.gameObject, unitychanWeight);
-
+            Debug.Log("chara in");
         }
         if (other.gameObject.tag == "Obstacle")
         {
