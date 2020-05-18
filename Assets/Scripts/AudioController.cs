@@ -16,15 +16,20 @@ public class AudioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-   public void FoodGet()
+    public void FoodGet()
     {
         audioSource.PlayOneShot(soundList[0]);
     }
-   public void ItemGet()
+    public void ItemGet()
     {
         audioSource.PlayOneShot(soundList[1]);
+    }
+
+    public void DeathSound()
+    {
+        audioSource.PlayOneShot(soundList[2]);
     }
 }
