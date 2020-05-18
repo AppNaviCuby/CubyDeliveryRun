@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class EnemyDeath : MonoBehaviour
 {
+    AudioController audioController;
     bool deathflag = false;
     // Start is called before the first frame update
     void Start()
     {
-
+        audioController = GameObject.Find("AudioController").GetComponent<AudioController>();
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class EnemyDeath : MonoBehaviour
         if (other.gameObject.tag == "Character")
         {
             Debug.Log("death");
-
+            audioController.DeathSound();
             StartCoroutine("DeathRetry");
             Time.timeScale = 0.0f;
         }
