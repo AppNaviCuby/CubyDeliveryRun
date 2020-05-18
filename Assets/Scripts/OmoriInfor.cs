@@ -32,7 +32,25 @@ public class OmoriInfor : MonoBehaviour
         unitychanObstacleWeight = Targetscript.weight;
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    /*public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "FallDownFloor")
+        {
+            DownFloorOmori = other.gameObject.GetComponent<FallDownFloor>();
+            OmoriOnFloorFlag = true;
+        }
+        if (other.gameObject.tag == "Character")
+        {
+            ObstacleWeightList.Add(other.gameObject, unitychanObstacleWeight);
+            Debug.Log("Character on");
+        }
+        if (other.gameObject.tag == "Obstacle")
+        {
+            ObstacleWeightList.Add(other.gameObject, unitychanObstacleWeight);
+        }*/
+
+
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "FallDownFloor")
         {
@@ -66,7 +84,18 @@ public class OmoriInfor : MonoBehaviour
         }
     }
 
-    public void OnTriggerExit2D(Collider2D other)
+    /* public void OnTriggerExit2D(Collider2D other)
+     {
+         ObstacleWeightList.Remove(other.gameObject);
+         Debug.Log("Character off");
+         TotalObstacleWeightCalc();
+         if (OmoriOnFloorFlag)
+         {
+             DownFloorOmori.GetOmoriMassUpdate(this.gameObject, OmoriMass);
+         }
+     }*/
+
+    public void OnCollisionExit2D(Collision2D other)
     {
         ObstacleWeightList.Remove(other.gameObject);
         Debug.Log("Character off");
