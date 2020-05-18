@@ -30,6 +30,6 @@ public class AudioController : MonoBehaviour
 
     public void DeathSound()
     {
-        audioSource.PlayOneShot(soundList[2]);
+        audioSource.PlayOneShot(soundList[2], 0.2F);
     }
 }
