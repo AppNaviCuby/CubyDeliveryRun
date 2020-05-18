@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 390557789661191396}
   - component: {fileID: 390557789661191399}
   - component: {fileID: 390557789661191398}
-  - component: {fileID: 4142087183025068782}
   m_Layer: 0
   m_Name: FallDownFloor3(nobu)
   m_TagString: FallDownFloor
