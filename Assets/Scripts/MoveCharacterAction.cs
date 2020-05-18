@@ -93,7 +93,7 @@ public class MoveCharacterAction : MonoBehaviour
 
             //接触しているオブジェクトの下向きのベクトルと自身から接触しているポイントへのベクトルの
             //角度が１０度未満であった場合にジャンプの段階数のリセットする
-            if (Vector2.Angle (contactObjectDown, dir) < 10.0f)
+            if (Vector2.Angle (contactObjectDown, dir) < 9.0f)
                 jumpCount = 0;
 
             break;
