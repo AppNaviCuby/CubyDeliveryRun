@@ -41,13 +41,13 @@ public class OmoriOnTrigger : MonoBehaviour
         }
 
 
-        if (other.gameObject.tag == "Obstacle")
+        /*if (other.gameObject.tag == "Obstacle")
         {
 
             Debug.Log("お守りに触れた");
             int OmoriWeight = other.gameObject.GetComponent<OmoriInfor>().OmoriMass;
             ObstacleWeightList.Add(other.gameObject, OmoriWeight);
-        }
+        }*/
 
         TotalObstacleWeightCalc();
 
