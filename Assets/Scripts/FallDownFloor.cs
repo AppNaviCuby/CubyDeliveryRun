@@ -43,9 +43,6 @@ public class FallDownFloor : MonoBehaviour
 
     }
 
-
-
-    /*public void OnTriggerEnter2D(Collider2D other)*/
     public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Character")
@@ -53,16 +50,8 @@ public class FallDownFloor : MonoBehaviour
             ObjectWeightList.Add(other.gameObject, unitychanWeight);
             //Debug.Log("chara in");
         }
-        if (other.gameObject.tag == "Obstacle")
-        {
-
-            //Debug.Log("お守りに触れた");
-            int OmoriWeight = other.gameObject.GetComponent<OmoriInfor>().OmoriMass;
-            ObjectWeightList.Add(other.gameObject, OmoriWeight);
-        }
 
         TotalWeightCalc();
-
 
         if (totalWeight >= overWeight)
         {
@@ -77,6 +66,23 @@ public class FallDownFloor : MonoBehaviour
          }*/
     }
 
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            //Debug.Log("お守りに触れた");
+            int OmoriWeight = other.gameObject.GetComponent<OmoriInfor>().OmoriMass;
+            ObjectWeightList.Add(other.gameObject, OmoriWeight);
+        }
+
+        TotalWeightCalc();
+
+        if (totalWeight >= overWeight)
+        {
+            StartCoroutine("FloorDownCount");
+        }
+    }          
+
     public void OnCollisionExit2D(Collision2D other)
     {
         ObjectWeightList.Remove(other.gameObject);
@@ -85,7 +91,19 @@ public class FallDownFloor : MonoBehaviour
         {
             StopCoroutine("FloorDownCount");
 
-            Debug.Log("out");
+            //Debug.Log("out");
+        }
+    }
+
+        public void OnTriggerExit2D(Collider2D other)
+    {
+        ObjectWeightList.Remove(other.gameObject);
+        TotalWeightCalc();
+        if (totalWeight < overWeight)
+        {
+            StopCoroutine("FloorDownCount");
+
+            //Debug.Log("out");
         }
     }
 

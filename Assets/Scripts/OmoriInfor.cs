@@ -7,7 +7,7 @@ public class OmoriInfor : MonoBehaviour
 
 
     public int FirstOmori;
-    public int OmoriMass;
+    public int OmoriMass = 1;
 
 
     int unitychanObstacleWeight = 0;
@@ -24,10 +24,12 @@ public class OmoriInfor : MonoBehaviour
     {
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("触れた");
         if (other.gameObject.tag == "FallDownFloor")
         {
+            
             DownFloorOmori = other.gameObject.GetComponent<FallDownFloor>();
             OmoriOnFloorFlag = true;
         }
@@ -38,14 +40,16 @@ public class OmoriInfor : MonoBehaviour
          }*/
     }
 
-    public void OnCollisionExit2D(Collision2D other)
+/*
+    public void OnTriggerExit2D(Collider2D other)
     {
         /*if (OmoriOnFloorFlag)
         {
             DownFloorOmori.GetOmoriMassUpdate(this.gameObject, OmoriMass);
-        }*/
+        }
         // OmoriOnFloorFlag = false;
     }
+    */
 
     public void OnOmoriUpdate(int OnOmoriMass)
     {
@@ -57,7 +61,4 @@ public class OmoriInfor : MonoBehaviour
             //Debug.Log(this.gameObject);
         }
     }
-
-
-
 }
