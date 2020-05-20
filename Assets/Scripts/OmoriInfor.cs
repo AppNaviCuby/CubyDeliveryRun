@@ -29,7 +29,7 @@ public class OmoriInfor : MonoBehaviour
         Debug.Log("触れた");
         if (other.gameObject.tag == "FallDownFloor")
         {
-            
+
             DownFloorOmori = other.gameObject.GetComponent<FallDownFloor>();
             OmoriOnFloorFlag = true;
         }
@@ -40,16 +40,16 @@ public class OmoriInfor : MonoBehaviour
          }*/
     }
 
-/*
-    public void OnTriggerExit2D(Collider2D other)
+
+    /*public void OnTriggerExit2D(Collider2D other)
     {
         /*if (OmoriOnFloorFlag)
         {
             DownFloorOmori.GetOmoriMassUpdate(this.gameObject, OmoriMass);
-        }
-        // OmoriOnFloorFlag = false;
-    }
-    */
+        }*/
+    /* OmoriOnFloorFlag = false;
+ }*/
+
 
     public void OnOmoriUpdate(int OnOmoriMass)
     {
