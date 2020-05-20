@@ -30,7 +30,7 @@ public class TargetManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        weightText.text = "重さ　：" +weight;
+        weightText.text = "重さ：" +weight;
     }
 
     public void targetJudge(Sprite thisFood)
