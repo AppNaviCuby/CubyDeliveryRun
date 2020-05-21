@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 928939273538155389}
   - component: {fileID: 6879888173821920692}
   - component: {fileID: 2804795944285104544}
+  - component: {fileID: 1106950407706741810}
   m_Layer: 0
   m_Name: Forest_terrain_dirt_128px_3 (1)
   m_TagString: Untagged
@@ -117,6 +118,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!252 &1106950407706741810
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864984014963883245}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 1
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
 --- !u!1 &3098696583989372314
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +148,7 @@ GameObject:
   - component: {fileID: 7434721612776922464}
   - component: {fileID: 8488926009355183094}
   - component: {fileID: 2324800484842082089}
+  - component: {fileID: 7681122010929374024}
   m_Layer: 0
   m_Name: Forest_terrain_dirt_128px_3 (2)
   m_TagString: Untagged
@@ -234,6 +254,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!252 &7681122010929374024
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3098696583989372314}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 1
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
 --- !u!1 &4569004012220844784
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +285,7 @@ GameObject:
   - component: {fileID: 828777916607294107}
   - component: {fileID: 2493195143983612798}
   - component: {fileID: 5577702515649424683}
+  - component: {fileID: 7789667833799474956}
   m_Layer: 0
   m_Name: Forest_terrain_dirt_128px_3
   m_TagString: Untagged
@@ -378,6 +417,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 3}
   m_EdgeRadius: 0
+--- !u!252 &7789667833799474956
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569004012220844784}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 1
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
 --- !u!1 &6922233411709828758
 GameObject:
   m_ObjectHideFlags: 0
