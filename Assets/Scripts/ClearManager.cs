@@ -9,7 +9,7 @@ public class ClearManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //clearPanel.SetActive(false);
     }
 
     // Update is called once per frame

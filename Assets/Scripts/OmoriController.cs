@@ -19,14 +19,25 @@ public class OmoriController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 hajiLeft = new Vector2(transform.position.x - 0.5f, transform.position.y);
-        Vector2 hajiRight = new Vector2(transform.position.x + 0.5f, transform.position.y);
+        Vector2 hajiLeft = new Vector2(transform.position.x - (0.47f * transform.lossyScale.x), transform.position.y);
+        Vector2 hajiRight = new Vector2(transform.position.x + (0.47f * transform.lossyScale.x), transform.position.y);
+        Vector2 centerX = new Vector2(transform.position.x, transform.position.y);
 
-        Debug.DrawRay(hajiLeft, Vector2.down * 0.51f, Color.yellow);
-        if(Physics2D.Raycast (hajiLeft, Vector2.down, 0.52f, groundMask) && Physics2D.Raycast (hajiRight, Vector2.down, 0.52f, groundMask))
+        Debug.DrawRay(hajiLeft, Vector2.down * 0.52f, Color.yellow);
+        Debug.DrawRay(hajiRight, Vector2.down * 0.52f, Color.yellow);
+        Debug.DrawRay(centerX, Vector2.down * 0.52f, Color.yellow);
+        Debug.DrawRay(hajiLeft, Vector2.left * 0.05f, Color.red);
+        Debug.DrawRay(hajiRight, Vector2.right * 0.05f, Color.red);
+
+        if(/*Physics2D.Raycast (hajiLeft, Vector2.down, 0.55f, groundMask) && Physics2D.Raycast (hajiRight, Vector2.down, 0.55f, groundMask)||*/ Physics2D.Raycast (centerX, Vector2.down, 0.52f, groundMask))
         {
             //Debug.Log("地上");
             Vector2 groundVelocity = omoriRb.velocity;
+
+            if(Physics2D.Raycast (hajiLeft, Vector2.left, 0.05f, groundMask) ||Physics2D.Raycast (hajiRight, Vector2.right, 0.05f, groundMask))
+            {
+                groundVelocity.x = 0f;
+            }
             groundVelocity.y = 0f;
             omoriRb.velocity = groundVelocity;
         }else if(!Physics2D.Raycast (hajiLeft, Vector2.down, 0.52f, groundMask) && !Physics2D.Raycast (hajiRight, Vector2.down, 0.52f, groundMask))

@@ -5,31 +5,33 @@ using UnityEngine;
 public class FallDownFloor : MonoBehaviour
 {
     //　床が落下するまでの時間
-	[SerializeField]private float timeToFall = 1.0f;
-    [SerializeField]private float overWeight = 1;
+    [SerializeField] private float timeToFall = 1.0f;
+    [SerializeField] private float overWeight = 1;
 
 
+    Dictionary<GameObject, int> ObjectWeightList = new Dictionary<GameObject, int>();
     GameObject TargetManager;
-    public GameObject OmoriController;
+    // public GameObject OmoriController;
 
     TargetManager Targetscript;
-    OmoriInfor Omoriscript;
+    //OmoriInfor Omoriscript;
     int unitychanWeight = 0;
-    int omoriWeight = 0;
+    //int omoriWeight = 0;
+    int totalWeight = 0;
 
-      Rigidbody2D rb;
-      Collider2D col;
+    Rigidbody2D rb;
+    Collider2D col;
     // Start is called before the first frame update
     void Start()
     {
         TargetManager = GameObject.Find("TargetManager");
         Targetscript = TargetManager.GetComponent<TargetManager>();
         //OmoriController = GameObject.Find("OmoriController");
-        Omoriscript = OmoriController.GetComponent<OmoriInfor>();
-         //Rigidbody2Dを取得
+        //Omoriscript = OmoriController.GetComponent<OmoriInfor>();
+        //Rigidbody2Dを取得
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
-       rb.isKinematic = true;
+        rb.isKinematic = true;
 
     }
 
@@ -37,40 +39,110 @@ public class FallDownFloor : MonoBehaviour
     void Update()
     {
         unitychanWeight = Targetscript.weight;
-        omoriWeight = Omoriscript.omoriMass;
+        //omoriWeight = Omoriscript.omoriMass;
+
     }
 
-   
-
-     public void OnCollisionEnter2D(Collision2D other){
-         Debug.Log(unitychanWeight);
-         Debug.Log(overWeight);
-         
-
-        if ((other.gameObject.tag == "Character" && (unitychanWeight >= overWeight) )|| (omoriWeight >= overWeight)){
-             StartCoroutine("FloorDownCount");
-            Debug.Log("in");
-            
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Character")
+        {
+            ObjectWeightList.Add(other.gameObject, unitychanWeight);
+            //Debug.Log("chara in");
         }
-     }
 
-    public void OnCollisionExit2D(Collision2D other){
-        if (other.gameObject.tag == "Character"){
-         StopCoroutine("FloorDownCount");
-          
-         Debug.Log("out");
+        TotalWeightCalc();
+
+        if (totalWeight >= overWeight)
+        {
+            StartCoroutine("FloorDownCount");
+        }
+
+
+        /* if ((other.gameObject.tag == "Character" && (unitychanWeight >= overWeight) )|| (omoriWeight >= overWeight)){
+              StartCoroutine("FloorDownCount");
+             Debug.Log("in");
+
+         }*/
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            //Debug.Log("お守りに触れた");
+            int OmoriWeight = other.gameObject.GetComponent<OmoriInfor>().OmoriMass;
+            ObjectWeightList.Add(other.gameObject, OmoriWeight);
+        }
+
+        TotalWeightCalc();
+
+        if (totalWeight >= overWeight)
+        {
+            StartCoroutine("FloorDownCount");
+        }
+    }          
+
+    public void OnCollisionExit2D(Collision2D other)
+    {
+        ObjectWeightList.Remove(other.gameObject);
+        TotalWeightCalc();
+        if (totalWeight < overWeight)
+        {
+            StopCoroutine("FloorDownCount");
+
+            //Debug.Log("out");
         }
     }
 
-      IEnumerator FloorDownCount()
+        public void OnTriggerExit2D(Collider2D other)
+    {
+        ObjectWeightList.Remove(other.gameObject);
+        TotalWeightCalc();
+        if (totalWeight < overWeight)
+        {
+            StopCoroutine("FloorDownCount");
+
+            //Debug.Log("out");
+        }
+    }
+
+
+    IEnumerator FloorDownCount()
     {//指定秒経過後に落ちる
         yield return new WaitForSeconds(timeToFall);
-         rb.isKinematic = false;
+        rb.isKinematic = false;
         col.isTrigger = true;
+        Debug.Log("down");
     }
 
-     void OnBecameInvisible (){
+    void OnBecameInvisible()
+    {
         GameObject.Destroy(this.gameObject);
+    }
+
+    void TotalWeightCalc()
+    {
+        int ObjectWeight = 0;
+        foreach (int Value in ObjectWeightList.Values)
+        {
+            ObjectWeight += Value;
+        }
+        totalWeight = ObjectWeight;
+    }
+
+    public void GetOmoriMassUpdate(GameObject OmoriUpdate, int OmoriUpdateValue)
+    {
+        ObjectWeightList[OmoriUpdate] = OmoriUpdateValue;
+        TotalWeightCalc();
+        if (totalWeight >= overWeight)
+        {
+            StartCoroutine("FloorDownCount");
+        }
+        if (totalWeight < overWeight)
+        {
+            StopCoroutine("FloorDownCount");
+        }
     }
 
 }

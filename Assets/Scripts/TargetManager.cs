@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TargetManager : MonoBehaviour
 {
     public List<GameObject> targetList = new List<GameObject>();
-    public List<Sprite> targetSpriteList = new List<Sprite>();
+    [HideInInspector]public List<Sprite> targetSpriteList = new List<Sprite>();
     public List<GameObject> goalList = new List<GameObject>();
     public int longth, weight, gotTarget = 0;
     public Text weightText;
@@ -30,7 +30,7 @@ public class TargetManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        weightText.text = "重さ　：" +weight;
+        weightText.text = "重さ：" +weight;
     }
 
     public void targetJudge(Sprite thisFood)

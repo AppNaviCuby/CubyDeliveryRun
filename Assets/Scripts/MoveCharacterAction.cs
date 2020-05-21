@@ -11,6 +11,8 @@ public class MoveCharacterAction : MonoBehaviour
     
 	public int jumpHight;
 	[SerializeField] int Max_jumpCount;
+
+	[SerializeField] float speedX=1.5f;
 	static int jumpCount=0;
 	static int hashDamage = Animator.StringToHash ("Damage");
 
@@ -48,7 +50,8 @@ public class MoveCharacterAction : MonoBehaviour
 		}
 		if (axis != 0){
 			spriteRenderer.flipX = axis < 0;
-            velocity.x = axis * 2;
+            velocity.x = speedX*axis * 2;  //speedX倍unitychanが速くなる
+			
         }
         rig2d.velocity = velocity;
 
@@ -90,7 +93,7 @@ public class MoveCharacterAction : MonoBehaviour
 
             //接触しているオブジェクトの下向きのベクトルと自身から接触しているポイントへのベクトルの
             //角度が１０度未満であった場合にジャンプの段階数のリセットする
-            if (Vector2.Angle (contactObjectDown, dir) < 10.0f)
+            if (Vector2.Angle (contactObjectDown, dir) < 9.0f)
                 jumpCount = 0;
 
             break;
