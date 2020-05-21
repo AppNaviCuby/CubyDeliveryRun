@@ -1274,7 +1274,6 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-
   m_Text: Stage Select
 --- !u!1 &4633132147454288089
 GameObject:
@@ -1430,7 +1429,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: You are good Courier!
-
 --- !u!1 &5688020849659345073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1441,7 @@ GameObject:
   - component: {fileID: 691362422265282215}
   - component: {fileID: 7541597514358522887}
   - component: {fileID: 3694720363574411792}
+  - component: {fileID: 6250841418002095472}
   m_Layer: 0
   m_Name: TargetManager
   m_TagString: Untagged
@@ -1511,6 +1510,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextStage: 
+--- !u!114 &6250841418002095472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688020849659345073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d82a592f2d906d44a6474a009babb9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuPanel: {fileID: 2001043866388390492}
 --- !u!1 &6328144851180652543
 GameObject:
   m_ObjectHideFlags: 0
