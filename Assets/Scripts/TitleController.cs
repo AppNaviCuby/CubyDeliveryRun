@@ -27,6 +27,6 @@ public class TitleController : MonoBehaviour
 
     void GoToFirstStage()
     {
-        SceneManager.LoadScene("GameSample");
+        SceneManager.LoadScene("StageSelect_nobu");
     }
 }
