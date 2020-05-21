@@ -2024,6 +2024,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300048, guid: 142ff8784e552734f9d6a895491d0ae8,
         type: 3}
+    - target: {fileID: 3694720363574411792, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: nextStage
+      value: Stage_naru2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ac91417f93c4edbb8cf7b6420c03f0, type: 3}
 --- !u!1001 &525172468

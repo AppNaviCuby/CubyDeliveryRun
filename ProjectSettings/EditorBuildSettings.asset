@@ -23,4 +23,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stages/kuzureruStage.unity
     guid: b5c6f84cee9ee473d98ec05e8cf515ab
+  - enabled: 1
+    path: Assets/Scenes/Stages/Stage1.unity
+    guid: 2c970e0e5e1ed431d9c9a619f537aa4d
+  - enabled: 1
+    path: Assets/Scenes/Stages/Nobu_Stage1.unity
+    guid: c3c9ecae0b1f0d842aa57a15bc43f1e2
+  - enabled: 1
+    path: Assets/Scenes/Stages/hiroStage.unity
+    guid: 2566f67bd3dae8347ac7a29dfc8d01c9
+  - enabled: 1
+    path: Assets/Scenes/Stages/Stage_naru.unity
+    guid: 024f0d1478f52854ba23539ef5c3d81d
+  - enabled: 1
+    path: Assets/Scenes/Stages/Guchi_Stage1.unity
+    guid: 9538e715d316d43bc97ec3b048bbab7b
+  - enabled: 1
+    path: Assets/Scenes/Stages/Guchi_Stage2.unity
+    guid: 1e74fb4620e28427d92e20e741c43d7d
+  - enabled: 1
+    path: Assets/Scenes/Stages/Guchi_Stage3.unity
+    guid: 8e49ff80003b2444e8c7dcfed052eb8d
+  - enabled: 1
+    path: Assets/Scenes/Stages/hiro2stage.unity
+    guid: 403a7de303e3d08488faeba9dbf4a872
+  - enabled: 1
+    path: Assets/Scenes/Stages/Nobu_Stage2.unity
+    guid: 293828acf41b6964ea4294da652592ce
+  - enabled: 1
+    path: Assets/Scenes/Stages/Stage_naru2.unity
+    guid: cf403aacd8d79754fa012a8c4fecccc6
+  - enabled: 1
+    path: Assets/Scenes/Stages/Stage_naru3.unity
+    guid: ec9c8867dcb9ee74ba63e2926ff6dd50
   m_configObjects: {}
