@@ -7,6 +7,7 @@ public class OmoriOnTrigger : MonoBehaviour
     Dictionary<GameObject, int> ObstacleWeightList = new Dictionary<GameObject, int>();
 
     GameObject TargetManager;
+
     GameObject ObstacleInfo;
 
     TargetManager Targetscript;
@@ -20,7 +21,10 @@ public class OmoriOnTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ObstacleInfo = GameObject.Find("ObstacleInfo");
+        GameObject childObject = gameObject.transform.parent.gameObject;
+        ObstacleInfo = childObject.transform.Find("ObstacleInfo").gameObject;
+
+        //ObstacleInfo = GameObject.Find("ObstacleInfo");
         OmoriInfor = ObstacleInfo.GetComponent<OmoriInfor>();
         TargetManager = GameObject.Find("TargetManager");
         Targetscript = TargetManager.GetComponent<TargetManager>();
