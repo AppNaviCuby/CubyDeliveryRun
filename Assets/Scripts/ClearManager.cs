@@ -5,11 +5,12 @@ using UnityEngine;
 public class ClearManager : MonoBehaviour
 {
     public GameObject clearPanel;
+    AudioController audioController;
 
     // Start is called before the first frame update
     void Start()
     {
-        //clearPanel.SetActive(false);
+        audioController = GameObject.Find("AudioController").GetComponent<AudioController>();
     }
 
     // Update is called once per frame
@@ -20,6 +21,8 @@ public class ClearManager : MonoBehaviour
 
     void GameClear()
     {
+        
+        audioController.ClearSound();
         clearPanel.SetActive(true);
     }
 

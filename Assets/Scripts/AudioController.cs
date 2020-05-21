@@ -32,4 +32,9 @@ public class AudioController : MonoBehaviour
     {
         audioSource.PlayOneShot(soundList[2], 0.2F);
     }
+
+    public void ClearSound()
+    {
+        audioSource.PlayOneShot(soundList[3], 0.5f);
+    }
 }
