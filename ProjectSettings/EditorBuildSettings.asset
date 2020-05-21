@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 3d63245fbdf3c5943a76d961769ccb9e
   - enabled: 1
-    path: Assets/Scenes/GameSample.unity
-    guid: 8294d970f16024afda0b8b60a1f21b6d
-  - enabled: 1
     path: Assets/Scenes/Stages/weightStage.unity
     guid: 66bddad946afb49f4b8476c5d0800aea
   - enabled: 1
@@ -56,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stages/Stage_naru3.unity
     guid: ec9c8867dcb9ee74ba63e2926ff6dd50
+  - enabled: 1
+    path: Assets/Scenes/StageSelect_nobu.unity
+    guid: 60db03d508e5d434f880f2b5cfac436a
   m_configObjects: {}
