@@ -1098,10 +1098,10 @@ RectTransform:
   m_Father: {fileID: 1422243344}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123.29997, y: -43.075012}
-  m_SizeDelta: {x: 355, y: 110.85}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 178.55, y: 80.159996}
+  m_SizeDelta: {x: 352.7, y: 160.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010291517
 MonoBehaviour:
@@ -1122,8 +1122,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 4629c100d3fd54396abd650b6e3372cd, type: 3}
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1134,7 +1134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u2190\u2192\uFF1A\u79FB\u52D5\n\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\uFF1A\u30B8\u30E3\u30F3\u30D7\nR\u30AD\u30FC\uFF1A\u30EA\u30B9\u30BF\u30FC\u30C8"
+  m_Text: "\u2190\u2192\uFF1A\u79FB\u52D5\n\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\uFF1A\u30B8\u30E3\u30F3\u30D7\nR\u30AD\u30FC\uFF1A\u30EA\u30B9\u30BF\u30FC\u30C8\nA\u30AD\u30FC\uFF1A\u30B9\u30C6\u30FC\u30B8\u9078\u629E\u306B\u623B\u308B"
 --- !u!222 &1010291518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1550,8 +1550,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 31}
-  m_SizeDelta: {x: 601.6, y: 221.7}
+  m_AnchoredPosition: {x: 2.7, y: 14}
+  m_SizeDelta: {x: 606.3, y: 286.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422243345
 MonoBehaviour:
@@ -1702,10 +1702,10 @@ RectTransform:
   m_Father: {fileID: 1422243344}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 54}
-  m_SizeDelta: {x: 601.6, y: 83.3}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 300.65002, y: -77.85503}
+  m_SizeDelta: {x: 601.6, y: 95.649994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612474058
 MonoBehaviour:
@@ -1726,11 +1726,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 4629c100d3fd54396abd650b6e3372cd, type: 3}
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1738,7 +1738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201D\u8377\u7269\u201D\u3092\u53D6\u308B\u3068\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u201D\u91CD\u3055\u201D\u304C\u5897\u3048\u3066\n\u30B8\u30E3\u30F3\u30D7\u304C\u4F4E\u304F\u306A\u308B"
+  m_Text: "\u201D\u8377\u7269\u201D\u3092\u53D6\u308B\u3068\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u201D\u91CD\u3055\u201D\u304C\u5897\u3048\n\u30B8\u30E3\u30F3\u30D7\u304C\u4F4E\u304F\u306A\u308B"
 --- !u!222 &1612474059
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1779,9 +1779,9 @@ RectTransform:
   m_Father: {fileID: 1422243344}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 145.29999, y: -91.149994}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -157.70007, y: 24.799988}
   m_SizeDelta: {x: 311, y: 39.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708324954
@@ -1803,8 +1803,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 4629c100d3fd54396abd650b6e3372cd, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
