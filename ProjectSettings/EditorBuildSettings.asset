@@ -5,28 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/UnityChan2D/Demo/Scenes/Start.unity
-    guid: b763c98f277cc420aa68ceb3fc0daf82
-  - enabled: 0
-    path: Assets/UnityChan2D/Demo/Scenes/Loading 1-1.unity
-    guid: a35423fc824db4fcab5346624a89eadd
-  - enabled: 0
-    path: Assets/UnityChan2D/Demo/Scenes/Intro 1-1.unity
-    guid: b624da3e00d714908a6ad67aba8ddba4
-  - enabled: 0
-    path: Assets/UnityChan2D/Demo/Scenes/World 1-1.unity
-    guid: bc1bc11bd56944cb68646a65a5fff077
-  - enabled: 0
-    path: Assets/Scenes/NobuScene.unity
-    guid: 93a400704438cc94495aa79c7948f532
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 3d63245fbdf3c5943a76d961769ccb9e
   - enabled: 1
     path: Assets/Scenes/GameSample.unity
     guid: 8294d970f16024afda0b8b60a1f21b6d
-
-    path: Assets/Scenes/Moving floor.unity
-    guid: 98c81112bbb4e174dae6eadfbd14fa75
+  - enabled: 1
+    path: Assets/Scenes/Stages/weightStage.unity
+    guid: 66bddad946afb49f4b8476c5d0800aea
+  - enabled: 1
+    path: Assets/Scenes/Stages/ItemStage.unity
+    guid: d0fca32821815474fabe4d68ef695c3f
+  - enabled: 1
+    path: Assets/Scenes/Stages/PushStage.unity
+    guid: 532885c39617d44f4ab6257e1b997659
+  - enabled: 1
+    path: Assets/Scenes/Stages/kuzureruStage.unity
+    guid: b5c6f84cee9ee473d98ec05e8cf515ab
   m_configObjects: {}
