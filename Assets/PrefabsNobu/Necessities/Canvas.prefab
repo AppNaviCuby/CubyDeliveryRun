@@ -1274,6 +1274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+
   m_Text: Stage Select
 --- !u!1 &4633132147454288089
 GameObject:
@@ -1429,6 +1430,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: You are good Courier!
+
 --- !u!1 &5688020849659345073
 GameObject:
   m_ObjectHideFlags: 0
