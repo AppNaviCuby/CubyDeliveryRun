@@ -1,13 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class NextMover : MonoBehaviour
+public class TutorialController : MonoBehaviour
 {
-    public string nextStage;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +14,9 @@ public class NextMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void OnClick()
-    {
-        //Debug.Log("次のステージへ");
-        SceneManager.LoadScene(nextStage);
+        if(Input.GetKey(KeyCode.Return))
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }
