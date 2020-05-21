@@ -7,6 +7,8 @@ public class ClearManager : MonoBehaviour
     public GameObject clearPanel;
     AudioController audioController;
 
+    public GameObject MenuPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +16,7 @@ public class ClearManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     void GameClear()
     {
         
@@ -26,11 +24,24 @@ public class ClearManager : MonoBehaviour
         clearPanel.SetActive(true);
     }
 
+　void MenuConsole()
+    {
+        MenuPanel.SetActive(true);
+    }
     void OnTriggerEnter2D(Collider2D thisTrigger)
     {
         if(thisTrigger.gameObject.tag =="Character")
         {
             GameClear();
+        }
+    
+    }
+
+     void Update()
+    {
+         if (Input.GetKeyDown(KeyCode.A)) {
+           　　MenuConsole();
+            
         }
     }
 }
