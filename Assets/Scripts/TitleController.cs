@@ -19,14 +19,15 @@ public class TitleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            Invoke("GoToFirstStage", 0.5f);
-        }
+
     }
 
-    void GoToFirstStage()
+    public void StageSelectOfTitleButtonClicked()
     {
         SceneManager.LoadScene("StageSelect_nobu");
+    }
+    public void GoToFirstStageButtonClicked()
+    {
+        SceneManager.LoadScene("weightStage");
     }
 }
