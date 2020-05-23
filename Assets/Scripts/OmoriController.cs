@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class OmoriController : MonoBehaviour
 {
+    [SerializeField, HideInInspector] Animator unitychanAnimator;
     [SerializeField] LayerMask groundMask;
     [SerializeField] float direction;
     Rigidbody2D omoriRb;
+    MoveCharacterAction unitychanController;
     //public int omoriMass = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         omoriRb = this.transform.parent.gameObject.GetComponent<Rigidbody2D>();
-        StartCoroutine("OnCollisionEnter2D");
     }
 
     // Update is called once per frame
@@ -52,8 +53,14 @@ public class OmoriController : MonoBehaviour
         if(thisCollision.gameObject.tag == "Character")
         {
             //Debug.Log("キャラに触れた");
+            //unitychanをobstacleが動いている間ストップさせる。その際、状態をidleに戻す　
+            unitychanController = thisCollision.gameObject.GetComponent<MoveCharacterAction>();
+            unitychanAnimator = thisCollision.gameObject.GetComponent<Animator>();
+            unitychanAnimator.SetFloat ("Speed", 0f);
+            unitychanController.enabled = false;
             omoriRb.velocity = Vector2.right * direction;
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.0f);
+            unitychanController.enabled = true;
             omoriRb.velocity = Vector2.zero;
         }
     }
