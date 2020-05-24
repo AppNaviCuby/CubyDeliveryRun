@@ -16,13 +16,6 @@ public class ClearManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    
-    void GameClear()
-    {
-        
-        audioController.ClearSound();
-        clearPanel.SetActive(true);
-    }
 
 　void MenuConsole()
     {
@@ -32,7 +25,8 @@ public class ClearManager : MonoBehaviour
     {
         if(thisTrigger.gameObject.tag =="Character")
         {
-            GameClear();
+            audioController.ClearSound();
+            clearPanel.SetActive(true);
         }
     
     }
