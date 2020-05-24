@@ -431,6 +431,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   direction: 1
+  unitychanIdle: {fileID: 21300000, guid: 425bf0be468554d6cb0b4ddd8c1c48c2, type: 3}
 --- !u!1 &9154695065164810147
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,3 +506,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   direction: -1
+  unitychanIdle: {fileID: 21300000, guid: 425bf0be468554d6cb0b4ddd8c1c48c2, type: 3}

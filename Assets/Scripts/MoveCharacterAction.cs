@@ -26,7 +26,7 @@ public class MoveCharacterAction : MonoBehaviour
 	public int hp = 4;
 
 	void Awake ()
-	{
+	{ 
 		animator = GetComponent<Animator> ();
 		spriteRenderer = GetComponent<SpriteRenderer> ();
 		rig2d = GetComponent<Rigidbody2D> ();
