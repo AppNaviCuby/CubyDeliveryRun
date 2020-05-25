@@ -6,15 +6,9 @@ using UnityEngine.SceneManagement;
 public class StageSelect_scenechange : MonoBehaviour
 {
     // Start is called before the first frame update
-
-     public GameObject MenuPanel;
     void Start()
     {
         
-    }
-     
-    public void OnMenuCloseButton(){
-       MenuPanel.SetActive(false);
     }
 
     // Update is called once per frame
