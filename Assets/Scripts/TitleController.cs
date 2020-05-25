@@ -34,4 +34,8 @@ public class TitleController : MonoBehaviour
     {
         SceneManager.LoadScene("Rule");
     }
+    public void OnTitleClick()
+    {
+        SceneManager.LoadScene("Title");
+    }
 }
