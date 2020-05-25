@@ -48,7 +48,7 @@ public class FallDownFloor : MonoBehaviour
         if (other.gameObject.tag == "Character")
         {
             ObjectWeightList.Add(other.gameObject, unitychanWeight);
-            //Debug.Log("chara in");
+            Debug.Log("chara in");
         }
 
         TotalWeightCalc();
@@ -81,7 +81,7 @@ public class FallDownFloor : MonoBehaviour
         {
             StartCoroutine("FloorDownCount");
         }
-    }          
+    }
 
     public void OnCollisionExit2D(Collision2D other)
     {
@@ -91,11 +91,12 @@ public class FallDownFloor : MonoBehaviour
         {
             StopCoroutine("FloorDownCount");
 
-            //Debug.Log("out");
+
         }
+        Debug.Log("chara out");
     }
 
-        public void OnTriggerExit2D(Collider2D other)
+    public void OnTriggerExit2D(Collider2D other)
     {
         ObjectWeightList.Remove(other.gameObject);
         TotalWeightCalc();
@@ -103,13 +104,14 @@ public class FallDownFloor : MonoBehaviour
         {
             StopCoroutine("FloorDownCount");
 
-            //Debug.Log("out");
+
         }
     }
 
 
     IEnumerator FloorDownCount()
     {//指定秒経過後に落ちる
+        //ObjectWeightList.Clear();
         yield return new WaitForSeconds(timeToFall);
         rb.isKinematic = false;
         col.isTrigger = true;
