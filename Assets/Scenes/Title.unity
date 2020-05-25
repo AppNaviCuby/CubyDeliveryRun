@@ -269,7 +269,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 942777751}
-        m_MethodName: StageSelectOfTitleButtonClicked
+        m_MethodName: OnRuleClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1914,7 +1914,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u904A\u3073\u65B9"
+  m_Text: How to Play
 --- !u!222 &2122076573
 CanvasRenderer:
   m_ObjectHideFlags: 0

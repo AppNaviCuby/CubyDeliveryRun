@@ -2648,6 +2648,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608750957}
   m_CullTransparentMesh: 0
+--- !u!1 &636463748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2001043866388390492, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1923610892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &648217087
 GameObject:
   m_ObjectHideFlags: 0
@@ -5765,6 +5771,8 @@ MonoBehaviour:
   - {fileID: 1226282047}
   - {fileID: 1567448565}
   - {fileID: 1536121009}
+  - {fileID: 636463748}
+  isRule: 1
 --- !u!114 &1834999413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6269,10 +6277,50 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1802486016843434541, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2544241353030376081, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308243315374812831, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3694720363574411792, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
       propertyPath: nextStage
       value: Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104504757547745916, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228208046698757242, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: isRule
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250084309307058620, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7081104854003110290, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314159162171667413, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ac91417f93c4edbb8cf7b6420c03f0, type: 3}

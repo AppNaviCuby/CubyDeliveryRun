@@ -30,4 +30,8 @@ public class TitleController : MonoBehaviour
     {
         SceneManager.LoadScene("weightStage");
     }
+    public void OnRuleClick()
+    {
+        SceneManager.LoadScene("Rule");
+    }
 }

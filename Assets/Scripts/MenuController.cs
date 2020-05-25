@@ -17,6 +17,7 @@ public class MenuController : MonoBehaviour
 　void MenuConsole()
     {
         MenuPanel.SetActive(true);
+        IntroManager.phase = Phase.Menu;
     }
    
      void Update()
