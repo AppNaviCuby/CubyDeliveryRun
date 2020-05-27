@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     
-    public GameObject MenuPanel;
+    public GameObject MenuPanel,TutorialPanel;
 
     // Start is called before the first frame update
    
@@ -17,6 +17,10 @@ public class MenuController : MonoBehaviour
 　void MenuConsole()
     {
         MenuPanel.SetActive(true);
+        if(TutorialPanel != null)
+        {
+            TutorialPanel.SetActive(false);
+        }
         IntroManager.phase = Phase.Menu;
     }
    
