@@ -77,7 +77,7 @@ public class TargetManager : MonoBehaviour
             }
             if(weight ==4)
             {
-                moveCharacterAction.jumpHight = 4;
+                moveCharacterAction.jumpHight = 3;
                 break;
             }
             
