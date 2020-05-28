@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ClearManager : MonoBehaviour
 {
-    public GameObject clearPanel;
+    public GameObject clearPanel,tutorialPanel;
     AudioController audioController;
 
-    public GameObject MenuPanel;
+    //public GameObject MenuPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -17,20 +17,28 @@ public class ClearManager : MonoBehaviour
 
     // Update is called once per frame
 
-　void MenuConsole()
+/*　
+void MenuConsole()
     {
         MenuPanel.SetActive(true);
     }
+    */
+
     void OnTriggerEnter2D(Collider2D thisTrigger)
     {
         if(thisTrigger.gameObject.tag =="Character")
         {
             audioController.ClearSound();
+            if(tutorialPanel != null)
+            {
+                tutorialPanel.SetActive(false);
+            }
             clearPanel.SetActive(true);
         }
     
     }
 
+     /*
      void Update()
     {
          if (Input.GetKeyDown(KeyCode.A)) {
@@ -38,4 +46,5 @@ public class ClearManager : MonoBehaviour
             
         }
     }
+    */
 }

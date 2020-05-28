@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6152259855509252778}
   - component: {fileID: 905175075461689374}
   - component: {fileID: 799784308937610057}
+  - component: {fileID: 5314085375925687242}
   m_Layer: 2
   m_Name: ObstacleInfo
   m_TagString: Obstacle
@@ -72,6 +73,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirstOmori: 1
   OmoriMass: 1
+--- !u!114 &5314085375925687242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907969766996161983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25af7abcf597b1047bc0ac5e3f46afc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3974729794240397118
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +415,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.43256953, y: -0.081469476}
+  m_Offset: {x: -0.43256953, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -413,7 +426,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.03486091, y: 0.7629389}
+  m_Size: {x: 0.03486091, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &1489938177920307341
 MonoBehaviour:
@@ -427,11 +440,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 311636d43a82148c0ae13a95b459953c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitychanAnimator: {fileID: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 1
+  hajiLeft: {x: 0, y: 0}
+  hajiRight: {x: 0, y: 0}
+  centerX: {x: 0, y: 0}
   direction: 1
-  unitychanIdle: {fileID: 21300000, guid: 425bf0be468554d6cb0b4ddd8c1c48c2, type: 3}
 --- !u!1 &9154695065164810147
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +493,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.42839932, y: -0.07622439}
+  m_Offset: {x: 0.42839932, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -488,7 +504,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.043201327, y: 0.75244874}
+  m_Size: {x: 0.043201327, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &5323200378918305885
 MonoBehaviour:
@@ -502,8 +518,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 311636d43a82148c0ae13a95b459953c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitychanAnimator: {fileID: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 1
+  hajiLeft: {x: 0, y: 0}
+  hajiRight: {x: 0, y: 0}
+  centerX: {x: 0, y: 0}
   direction: -1
-  unitychanIdle: {fileID: 21300000, guid: 425bf0be468554d6cb0b4ddd8c1c48c2, type: 3}
