@@ -11,10 +11,16 @@ public class TargetManager : MonoBehaviour
     public int longth, weight, gotTarget = 0;
     public Text weightText;
     MoveCharacterAction moveCharacterAction;
+    AudioController audioController;
+
+    //public GameObject MenuPanel;
+
 
     // Start is called before the first frame update
     void Start()
     {
+
+        audioController = GameObject.Find("AudioController").GetComponent<AudioController>();
         moveCharacterAction = GameObject.FindGameObjectWithTag("Character").GetComponent<MoveCharacterAction>();
 
         weight = 1;
@@ -46,6 +52,7 @@ public class TargetManager : MonoBehaviour
             //すべてのtargetを集めたらゴールが開く
             if (gotTarget == longth)
             {
+                audioController.BrockBrokenSound();
                 // コルーチン開始
                 StartCoroutine("BlockBrokenSpawn");
                 /* for (int j = 0; j < goalList.Count; j++)
