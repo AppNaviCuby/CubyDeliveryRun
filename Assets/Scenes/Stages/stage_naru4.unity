@@ -362,7 +362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2048648106}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &176664094
 SpriteRenderer:
@@ -422,11 +422,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 691362422265282215, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
-      propertyPath: goalList.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 691362422265282215, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
       propertyPath: goalList.Array.data[0]
       value: 
       objectReference: {fileID: 1409037464}
@@ -435,12 +430,6 @@ PrefabInstance:
       propertyPath: goalList.Array.data[1]
       value: 
       objectReference: {fileID: 176664092}
-    - target: {fileID: 833794710922581675, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300044, guid: 142ff8784e552734f9d6a895491d0ae8,
-        type: 3}
     - target: {fileID: 833794711188454259, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -550,48 +539,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711457340756, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300016, guid: 142ff8784e552734f9d6a895491d0ae8,
-        type: 3}
-    - target: {fileID: 833794711709658832, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300008, guid: 142ff8784e552734f9d6a895491d0ae8,
-        type: 3}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 376.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711980103892, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711980103892, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3694720363574411792, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: nextStage
-      value: Stage_naru
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ac91417f93c4edbb8cf7b6420c03f0, type: 3}
@@ -6560,24 +6507,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed5639b4a12cde846ad0e7822f095006, type: 3}
---- !u!1 &2003054578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5688020849659345073, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 262587856}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2003054581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003054578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e0eac67c6060e2429bcf1a05f04b1bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2021419140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6744,8 +6673,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1431969853}
-  - {fileID: 330295455}
   - {fileID: 176664093}
+  - {fileID: 330295455}
   - {fileID: 1409037465}
   m_Father: {fileID: 0}
   m_RootOrder: 38
