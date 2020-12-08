@@ -24,12 +24,10 @@ public class MenuController : MonoBehaviour
         IntroManager.phase = Phase.Menu;
     }
    
-     void Update()
-    {
-         if (Input.GetKeyDown(KeyCode.T)) {
-           　　MenuConsole();
-            
-        }
+     public void OnClick() {
+                MenuConsole();
+  }
+
     }
-}
+
 

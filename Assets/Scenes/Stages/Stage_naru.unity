@@ -4834,11 +4834,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 691362422265282215, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
-      propertyPath: goalList.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 691362422265282215, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
       propertyPath: goalList.Array.data[0]
       value: 
       objectReference: {fileID: 1620535714}
@@ -4847,12 +4842,6 @@ PrefabInstance:
       propertyPath: goalList.Array.data[1]
       value: 
       objectReference: {fileID: 64765919}
-    - target: {fileID: 833794710922581675, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3042c3638b90349d1bc225d843f075d6,
-        type: 3}
     - target: {fileID: 833794711188454259, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4962,58 +4951,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711457340756, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a2eb82325f74482cbfd2e8a91d9f90f,
-        type: 3}
-    - target: {fileID: 833794711709658832, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3bcd97186e4e94e6796f4d04068ca526,
-        type: 3}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 376.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711980103892, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711980103892, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033049849923167798, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2273483708042266624, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3694720363574411792, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: nextStage
-      value: Guchi_Stage2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ac91417f93c4edbb8cf7b6420c03f0, type: 3}
