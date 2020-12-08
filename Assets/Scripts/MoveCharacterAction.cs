@@ -13,7 +13,7 @@ public class MoveCharacterAction : MonoBehaviour
 	[SerializeField] int Max_jumpCount;
 
 	[SerializeField] float speedX=1.5f;
-	[SerializeField] int jumpCount = 0;
+	static int jumpCount=0;
 	static int hashDamage = Animator.StringToHash ("Damage");
 
 	[SerializeField] private float characterHeightOffset = 0.4f;
@@ -24,9 +24,6 @@ public class MoveCharacterAction : MonoBehaviour
 	[SerializeField, HideInInspector]Rigidbody2D rig2d;
 
 	public int hp = 4;
-	public float direction, startTime, finishTime;
-	public bool isClick, isMouse, isJump;
-	[SerializeField] float axis;
 
 	void Awake ()
 	{ 
@@ -37,17 +34,7 @@ public class MoveCharacterAction : MonoBehaviour
 
 	void Update ()
 	{
-		//マウス入力かキーボード入力かを選択可能に(guchi)
-		if(isMouse)
-		{
-			axis = direction * GetAxisHorizon(isClick);
-		}
-		else
-		{
-			axis = Input.GetAxis ("Horizontal");
-			if(axis != 0.0f) startTime = Time.time;
-			if(axis == 1.0f) finishTime = Time.time;
-		}
+		float axis = Input.GetAxis ("Horizontal");
 		bool isDown = Input.GetAxisRaw ("Vertical") < 0;
 
 		/*
@@ -57,16 +44,14 @@ public class MoveCharacterAction : MonoBehaviour
 		3マス：8
 		*/
         Vector2 velocity = rig2d.velocity;
-		if (jumpCount< Max_jumpCount && (Input.GetButtonDown ("Jump") || isJump)) 
-		{
+		if (jumpCount< Max_jumpCount&&Input.GetButtonDown ("Jump")) {
 			velocity.y = jumpHight;
-			isJump = false;
 			jumpCount++;
 		}
-		if (axis != 0)
-		{
+		if (axis != 0){
 			spriteRenderer.flipX = axis < 0;
             velocity.x = speedX*axis * 2;  //speedX倍unitychanが速くなる
+			
         }
         rig2d.velocity = velocity;
 
@@ -114,51 +99,4 @@ public class MoveCharacterAction : MonoBehaviour
             break;
         }
     }
-
-	//現在時刻と押し始め押し終わり時刻の差から速度を与える
-	//deltaTimeの係数で最高速(1f)までの時間を調整可能(guchi)
-	public float GetAxisHorizon(bool isClick)
-	{
-		float deltaTime = 0.0f;
-		if(isClick)
-		{
-			deltaTime = 2.5f * (Time.time - startTime);
-			if(deltaTime >= 1.0) deltaTime = 1.0f;  
-       		//Debug.Log(deltaTime);
-		}
-		else
-		{
-			deltaTime = 1.0f - 10.0f * (Time.time - finishTime);
-			if(deltaTime <= 0.0) deltaTime = 0.0f;
-		}
-		return deltaTime;
-	}
-
-	//左右ボタンの入力から押し始め押し終わり時刻、方向を取得（guchi）
-	public void OnRightDown()
-	{
-		direction = 1.0f;
-		isClick = true;
-		startTime = Time.time;
-	}
-	public void OnRigtUp()
-	{
-		isClick = false;
-		finishTime = Time.time;
-	}
-	public void OnLeftDown()
-	{
-		direction = -1.0f;
-		isClick = true;
-		startTime = Time.time;
-	}
-	public void OnLeftUp()
-	{
-		isClick = false;
-		finishTime = Time.time;
-	}
-	public void OnJumpDown()
-	{
-		isJump = true;
-	}
 }
