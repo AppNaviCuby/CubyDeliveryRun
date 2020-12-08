@@ -2218,7 +2218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1456253038
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2495,7 +2495,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "BGM\u30FBSE\r\ntitle/stageselect\uFF1A\u30D5\u30EA\u30FCBGM\u30FB\u97F3\u697D\u7D20\u6750MusMus\u69D8\u3000\n\u201C\u8349\u539F\u306E\u6C11\u201D\u3000http://musmus.main.jp/\r\n\u30B2\u30FC\u30E0\u5185\u97F3\u697D\u3000\u5143\u97F3\u697D\uFF1AHURT
-    RECORD\u69D8\u3000\n\u201C\u30E9\u30C6\u30F3\u30D3\u30FC\u30C8\u201D\u3000https://www.hurtrecord.com/\u3000\r\n\u4E0A\u8A18\u3000SE\u306B\u3066\u3082\u4F7F\u7528\r\nCharactor\r\n\xA9
+    RECORD\u69D8\u3000\n\u201C\u30E9\u30C6\u30F3\u30D3\u30FC\u30C8\u201D\u3000https://www.hurtrecord.com/\u3000\n\"\u52B9\u679C\u97F3\u5DE5\u623F\"
+    \rhttps://umipla.com/soundeffect/2781\n\u4E0A\u8A18\u3000SE\u306B\u3066\u3082\u4F7F\u7528\r\nCharactor\r\n\xA9
     Unity Technologies Japan/UCL"
 --- !u!222 &1533144943
 CanvasRenderer:
@@ -3280,6 +3281,7 @@ MonoBehaviour:
   jumpHight: 5
   Max_jumpCount: 1
   speedX: 1.5
+  jumpCount: 0
   characterHeightOffset: 0.4
   groundMask:
     serializedVersion: 2
@@ -3288,6 +3290,13 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   rig2d: {fileID: 0}
   hp: 4
+  direction: 0
+  startTime: 0
+  finishTime: 0
+  isClick: 0
+  isMouse: 0
+  isJump: 0
+  axis: 0
 --- !u!95 &31526854006407005
 Animator:
   serializedVersion: 3
