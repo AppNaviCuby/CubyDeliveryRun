@@ -37,9 +37,4 @@ public class AudioController : MonoBehaviour
     {
         audioSource.PlayOneShot(soundList[3], 0.5f);
     }
-
-    public void BrockBrokenSound()
-    {
-        audioSource.PlayOneShot(soundList[4], 1.0f);
-    }
 }
