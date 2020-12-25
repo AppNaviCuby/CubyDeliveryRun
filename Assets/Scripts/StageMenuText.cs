@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StageText : MonoBehaviour
+public class StageMenuText : MonoBehaviour
 {
     // Start is called before the first frame update
     public Text text;
@@ -22,7 +22,7 @@ public class StageText : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == StageList[i])
             {
-                text.text = "Stage:" + (i + 1);
+                text.text = "" + (i + 1);
 
             }
         }
