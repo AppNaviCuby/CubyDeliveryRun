@@ -669,7 +669,7 @@ PrefabInstance:
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.48
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
@@ -715,6 +715,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374780, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
@@ -3665,7 +3680,7 @@ PrefabInstance:
     - target: {fileID: 1023004768658893568, guid: 48b04a2366304497da1f4de31f06a76a,
         type: 3}
       propertyPath: m_Name
-      value: ramen
+      value: Apple
       objectReference: {fileID: 0}
     - target: {fileID: 1023004768658893569, guid: 48b04a2366304497da1f4de31f06a76a,
         type: 3}
@@ -3795,7 +3810,7 @@ PrefabInstance:
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.48
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
@@ -3845,6 +3860,16 @@ PrefabInstance:
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374780, guid: 481c0ec45f328414e99b58af9ce9ac59,
@@ -4122,6 +4147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015601767899663882, guid: 05724d88de045cd4c94229179847c8b0,
+        type: 3}
+      propertyPath: isMouse
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05724d88de045cd4c94229179847c8b0, type: 3}
@@ -4623,7 +4653,7 @@ PrefabInstance:
     - target: {fileID: 6349260954471786868, guid: 4ed8fe878b7904bc0bece478f04e4626,
         type: 3}
       propertyPath: m_Name
-      value: takoyaki
+      value: Cherry
       objectReference: {fileID: 0}
     - target: {fileID: 6349260954471786870, guid: 4ed8fe878b7904bc0bece478f04e4626,
         type: 3}
@@ -4804,7 +4834,7 @@ PrefabInstance:
     - target: {fileID: 5671598214407010694, guid: fc1821fb5e3f6409ca7bb83cf7f9aeee,
         type: 3}
       propertyPath: m_Name
-      value: bento
+      value: Lemon
       objectReference: {fileID: 0}
     - target: {fileID: 5671598214407010695, guid: fc1821fb5e3f6409ca7bb83cf7f9aeee,
         type: 3}
@@ -4928,7 +4958,7 @@ PrefabInstance:
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.48
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
@@ -4975,6 +5005,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374780, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
       propertyPath: OmoriController
@@ -5002,7 +5047,7 @@ PrefabInstance:
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.48
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
@@ -5048,6 +5093,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647911665392374776, guid: 481c0ec45f328414e99b58af9ce9ac59,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3647911665392374780, guid: 481c0ec45f328414e99b58af9ce9ac59,
         type: 3}
@@ -5339,13 +5399,18 @@ PrefabInstance:
     - target: {fileID: 7244549854023947240, guid: e27d4b50efbbf402dbbe61d6f7049227,
         type: 3}
       propertyPath: soundList.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7244549854023947240, guid: e27d4b50efbbf402dbbe61d6f7049227,
         type: 3}
       propertyPath: soundList.Array.data[3]
       value: 
       objectReference: {fileID: 8300000, guid: 0b6d579db06cd7d4b8df016c395cb107, type: 3}
+    - target: {fileID: 7244549854023947240, guid: e27d4b50efbbf402dbbe61d6f7049227,
+        type: 3}
+      propertyPath: soundList.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8750faa0a2e0bf04a817d1d30663c2d4, type: 3}
     - target: {fileID: 7244549854023947243, guid: e27d4b50efbbf402dbbe61d6f7049227,
         type: 3}
       propertyPath: m_Name
