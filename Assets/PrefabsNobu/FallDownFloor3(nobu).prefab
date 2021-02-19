@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 390557789661191396}
   - component: {fileID: 390557789661191399}
   - component: {fileID: 390557789661191398}
+  - component: {fileID: 4142087183025068782}
   m_Layer: 0
   m_Name: FallDownFloor3(nobu)
   m_TagString: FallDownFloor
@@ -198,8 +199,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390557790526271591}
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -0.26292545, y: -0.02029168, z: 0}
-  m_LocalScale: {x: 1.0065337, y: 1.0672052, z: 1.0416667}
+  m_LocalPosition: {x: -0.25, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390557789661191394}
   m_RootOrder: 0
@@ -278,8 +279,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390557790820619149}
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 0.2331601, y: -0.02029168, z: 0}
-  m_LocalScale: {x: 1.0065337, y: 1.0672052, z: 1.0416667}
+  m_LocalPosition: {x: 0.25, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390557789661191394}
   m_RootOrder: 1
@@ -358,8 +359,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841285754556853377}
   m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -0.01488267, y: -0.02029168, z: 0}
-  m_LocalScale: {x: 1.068838, y: 1.0672052, z: 1.0416667}
+  m_LocalPosition: {x: 0, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 390557789661191394}
   m_RootOrder: 2
