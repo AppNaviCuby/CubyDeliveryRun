@@ -436,7 +436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 250.22, y: -2.77}
+  m_AnchoredPosition: {x: 270.22, y: -10.77}
   m_SizeDelta: {x: 499.55, y: 90.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148270273
@@ -470,7 +470,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201D\u843D\u4E0B\u5E8A\u201D\u306F\u201D\u30DE\u30FC\u30AF\u201D\u306E\u6570\u306E\u201D\u91CD\u3055\u201D\u304C\u4E57\u308B\u3068\n\u843D\u3061\u3066\u6D88\u3048\u308B"
+  m_Text: "\u201D\u843D\u4E0B\u5E8A\u201D\u306F\u201D\u30DE\u30FC\u30AF\u201D\u306E\u6570\u306E\u201D\u91CD\u3055\u201D\u304C\n
+    \u4E57\u308B\u3068\u843D\u3061\u3066\u6D88\u3048\u308B"
 --- !u!222 &148270274
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1073,12 +1074,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.69803923}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8156863}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: e52401bf45c297d4b86ec2caddd25250, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1156,7 +1157,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.005
+  orthographic size: 7.5029783
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1273,7 +1274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197.5, y: 89}
+  m_AnchoredPosition: {x: 190.6, y: 79.2}
   m_SizeDelta: {x: 75, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007699220

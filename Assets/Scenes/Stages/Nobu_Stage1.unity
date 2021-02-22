@@ -7143,6 +7143,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1737108984553678335, guid: e27d4b50efbbf402dbbe61d6f7049227,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7244549854023947222, guid: e27d4b50efbbf402dbbe61d6f7049227,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7644,7 +7649,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.005
+  orthographic size: 7.5029783
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
