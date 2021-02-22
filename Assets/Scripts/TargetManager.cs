@@ -13,6 +13,8 @@ public class TargetManager : MonoBehaviour
     MoveCharacterAction moveCharacterAction;
     AudioController audioController;
 
+    private bool ruleReadFlag = false;
+
     //public GameObject MenuPanel;
 
 
@@ -64,6 +66,19 @@ public class TargetManager : MonoBehaviour
         }
 
         //Debug.Log(falseNumber+ "回間違えた");
+    }
+
+    //rule画面のみの例外処理
+    public void ruleTargetJudge()
+    {
+        if (!ruleReadFlag)
+        {
+            audioController.BrockBrokenSound();
+            // コルーチン開始
+            StartCoroutine("BlockBrokenSpawn");
+
+            ruleReadFlag = true;
+        }
     }
 
     private IEnumerator BlockBrokenSpawn()

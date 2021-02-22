@@ -6614,7 +6614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: e52401bf45c297d4b86ec2caddd25250, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6756,7 +6756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 249.98, y: 2.33}
+  m_AnchoredPosition: {x: 259.98, y: -10.33}
   m_SizeDelta: {x: 500.05, y: 187.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612474058
@@ -6790,7 +6790,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201D\u8377\u7269\u201D\u3092\u53D6\u308B\u3068\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u201D\u91CD\u3055\u201D\u304C\u5897\u3048\n\u30B8\u30E3\u30F3\u30D7\u304C\u4F4E\u304F\u306A\u308B\n\u5168\u90E8\u96C6\u3081\u308B\u3068\u30B4\u30FC\u30EB\u3067\u304D\u308B\u3088\u3046\u306B\u306A\u308B"
+  m_Text: "\u201D\u8377\u7269\u201D\u3092\u53D6\u308B\u3068\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u201D\u91CD\u3055\u201D\u304C\u5897\u3048\n
+    \u30B8\u30E3\u30F3\u30D7\u304C\u4F4E\u304F\u306A\u308B\n \u5168\u90E8\u96C6\u3081\u308B\u3068\u30B4\u30FC\u30EB\u3067\u304D\u308B\u3088\u3046\u306B\u306A\u308B"
 --- !u!222 &1612474059
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7307,7 +7308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197.5, y: 89}
+  m_AnchoredPosition: {x: 191.6, y: 80.1}
   m_SizeDelta: {x: 75, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808590131
@@ -7454,7 +7455,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.005
+  orthographic size: 7.5029783
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
