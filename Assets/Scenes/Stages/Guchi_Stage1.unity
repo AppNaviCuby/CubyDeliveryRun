@@ -1168,7 +1168,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clearPanel
       value: 
-      objectReference: {fileID: 1032905433}
+      objectReference: {fileID: 0}
     - target: {fileID: 6708678172581519887, guid: 6236d79d870b94116a43fbed46882f6e,
         type: 3}
       propertyPath: m_Name
@@ -1485,7 +1485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76efffa753feae6478f709450444af98, type: 3}
---- !u!1001 &1032905432
+--- !u!1001 &1028225335
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1520,11 +1520,6 @@ PrefabInstance:
     - target: {fileID: 691362422265282215, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
       propertyPath: goalList.Array.data[4]
-      value: 
-      objectReference: {fileID: 275336429}
-    - target: {fileID: 691362422265282215, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: goalList.Array.data[5]
       value: 
       objectReference: {fileID: 275336429}
     - target: {fileID: 833794710922581675, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
@@ -1643,11 +1638,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 833794711188454263, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 833794711457340756, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
       propertyPath: m_Sprite
@@ -1660,36 +1650,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 29fdad6d15ee0482b977da38ac3ebd46,
         type: 3}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -80
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711946618563, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711980103892, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 833794711980103892, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -300
-      objectReference: {fileID: 0}
-    - target: {fileID: 1081273541112062340, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1378871955064401137, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1639328986970672358, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1709,16 +1669,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLeftUp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001043866388390492, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3694720363574411792, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: nextStage
-      value: hiro2stage
       objectReference: {fileID: 0}
     - target: {fileID: 4122821521073317745, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
@@ -1750,19 +1700,8 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnRigtUp
       objectReference: {fileID: 0}
-    - target: {fileID: 8270603748766778767, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ac91417f93c4edbb8cf7b6420c03f0, type: 3}
---- !u!1 &1032905433 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2273483708042266624, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1032905432}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1109621316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9380,7 +9319,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.005
+  orthographic size: 6.1637945
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
