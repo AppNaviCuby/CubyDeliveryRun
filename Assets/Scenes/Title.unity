@@ -370,7 +370,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5029783
+  orthographic size: 6.1637945
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1610,7 +1610,6 @@ GameObject:
   - component: {fileID: 1469167741}
   - component: {fileID: 1469167743}
   - component: {fileID: 1469167742}
-  - component: {fileID: 1469167744}
   m_Layer: 5
   m_Name: SafeAreaPanel
   m_TagString: Untagged
@@ -1678,18 +1677,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469167740}
   m_CullTransparentMesh: 0
---- !u!114 &1469167744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469167740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ac64563b03b843fbab8bfe2f305cd37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1533144939
 GameObject:
   m_ObjectHideFlags: 0
