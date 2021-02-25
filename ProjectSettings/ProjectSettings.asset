@@ -724,10 +724,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: c7f5aad6-30b5-4523-9868-2ca0e25b812b
+  cloudProjectId: e08b55da-75f6-4bfe-a969-96161dffdd59
   framebufferDepthMemorylessMode: 0
-  projectName: CubyDeliveryRun
-  organizationId: unite19981218
+  projectName: Delivery Run
+  organizationId: vncht532
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
