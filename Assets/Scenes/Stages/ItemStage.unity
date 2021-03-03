@@ -6888,7 +6888,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clearPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1877851413}
     - target: {fileID: 6708678172581519882, guid: 6236d79d870b94116a43fbed46882f6e,
         type: 3}
       propertyPath: tutorialPanel
@@ -7465,6 +7465,11 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnLeftUp
       objectReference: {fileID: 0}
+    - target: {fileID: 3694720363574411792, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+        type: 3}
+      propertyPath: nextStage
+      value: PushStage
+      objectReference: {fileID: 0}
     - target: {fileID: 4122821521073317745, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7497,6 +7502,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ac91417f93c4edbb8cf7b6420c03f0, type: 3}
+--- !u!1 &1877851413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2273483708042266624, guid: a2ac91417f93c4edbb8cf7b6420c03f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1877851412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1887617681
 GameObject:
   m_ObjectHideFlags: 0
