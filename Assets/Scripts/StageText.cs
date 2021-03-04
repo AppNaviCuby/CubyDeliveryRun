@@ -12,15 +12,18 @@ public class StageText : MonoBehaviour
     ,"Nobu_Stage1","hiroStage","Stage_naru","Guchi_Stage2","Stage_naru3","Nobu_Stage2","Stage_naru2","Guchi_Stage1","hiro2stage","Guchi_Stage3" };
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        for(int i=0;i<15;i++){
-            if(SceneManager.GetActiveScene().name==StageList[i]){
-                text.text="Stage "+(i+1);
+        for (int i = 0; i < 15; i++)
+        {
+            if (SceneManager.GetActiveScene().name == StageList[i])
+            {
+                text.text = "Stage:" + (i + 1);
+
             }
         }
     }

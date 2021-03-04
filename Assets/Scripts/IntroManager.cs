@@ -13,6 +13,7 @@ public class IntroManager : MonoBehaviour
     [SerializeField] private List<GameObject> panelList;
     [SerializeField] private bool isRule;
     private Phase tempPhase;
+    public GameObject redFrame;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,7 @@ public class IntroManager : MonoBehaviour
                 panelList[(int)Phase.Rule3].SetActive(false);
                 panelList[(int)Phase.Rule4].SetActive(false);
                 panelList[(int)Phase.Menu].SetActive(false);
+                redFrame.SetActive(false);
                 break;
             case Phase.Rule2:
                 panelList[(int)Phase.Rule1].SetActive(false);
@@ -49,6 +51,7 @@ public class IntroManager : MonoBehaviour
                 panelList[(int)Phase.Rule3].SetActive(false);
                 panelList[(int)Phase.Rule4].SetActive(false);
                 panelList[(int)Phase.Menu].SetActive(false);
+                redFrame.SetActive(true);
                 break;
             case Phase.Rule3:
                 panelList[(int)Phase.Rule1].SetActive(false);
@@ -56,6 +59,7 @@ public class IntroManager : MonoBehaviour
                 panelList[(int)Phase.Rule3].SetActive(true);
                 panelList[(int)Phase.Rule4].SetActive(false);
                 panelList[(int)Phase.Menu].SetActive(false);
+                redFrame.SetActive(false);
                 break;
             case Phase.Rule4:
                 panelList[(int)Phase.Rule1].SetActive(false);
@@ -63,6 +67,7 @@ public class IntroManager : MonoBehaviour
                 panelList[(int)Phase.Rule3].SetActive(false);
                 panelList[(int)Phase.Rule4].SetActive(true);
                 panelList[(int)Phase.Menu].SetActive(false);
+                redFrame.SetActive(false);
                 break;
             case Phase.Menu:
                 panelList[(int)Phase.Rule1].SetActive(false);
@@ -70,6 +75,7 @@ public class IntroManager : MonoBehaviour
                 panelList[(int)Phase.Rule3].SetActive(false);
                 panelList[(int)Phase.Rule4].SetActive(false);
                 panelList[(int)Phase.Menu].SetActive(true);
+                redFrame.SetActive(false);
                 break;
             case Phase.normal:
                 panelList[(int)Phase.Rule1].SetActive(false);
@@ -77,6 +83,7 @@ public class IntroManager : MonoBehaviour
                 panelList[(int)Phase.Rule3].SetActive(false);
                 panelList[(int)Phase.Rule4].SetActive(false);
                 panelList[(int)Phase.Menu].SetActive(false);
+                redFrame.SetActive(false);
                 break;
         }
     }

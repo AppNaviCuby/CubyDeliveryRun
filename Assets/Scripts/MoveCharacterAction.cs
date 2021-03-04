@@ -35,6 +35,11 @@ public class MoveCharacterAction : MonoBehaviour
 		rig2d = GetComponent<Rigidbody2D> ();
 	}
 
+	void Start()
+	{
+		isMouse = true;
+	}
+
 	void Update ()
 	{
 		//マウス入力かキーボード入力かを選択可能に(guchi)
