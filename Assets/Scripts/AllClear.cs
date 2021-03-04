@@ -9,7 +9,7 @@ public class AllClear : MonoBehaviour
     }
     // Update is called once per frame
     public void OnClick(){
-    PlayerPrefs.SetInt ("SCORE", 10);
+    PlayerPrefs.SetInt ("SCORE", 15);
     PlayerPrefs.Save ();
     }
 }
