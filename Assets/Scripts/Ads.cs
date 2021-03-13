@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.Monetization;
  
 public class Ads : MonoBehaviour {
  
 
-    string gameId = "4005978";
-    bool testMode = true;
+    string gameId = "4026936";
+    bool testMode = false;
 
     void Start () {
         // Initialize the Ads service:
